@@ -9,6 +9,9 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      gradientColorStops: {
+        'white-green': ['#FFFFFF', '#3CAB80']
+      },
       colors: {
         'primary-black': '#1A232E',
         'secondary-white': '#c7c7c7',

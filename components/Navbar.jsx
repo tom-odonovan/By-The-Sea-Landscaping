@@ -19,7 +19,7 @@ const Navbar = () => (
         alt='search'
         className='w-[24px] h-[24px] object-contain'
       />
-      <h2 className='font-extrabold text-[24px] leading-[30px] text-white'>
+      <h2 className='font-extrabold text-[24px] leading-[30px] text-black'>
         BY THE SEA LANDSCAPING
       </h2>
       <img
