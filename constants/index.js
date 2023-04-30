@@ -1,4 +1,4 @@
-export const exploreWorlds = [
+export const latestProjects = [
   {
     id: 'world-1',
     imgUrl: '/planet-01.png',
