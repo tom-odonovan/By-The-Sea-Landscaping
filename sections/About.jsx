@@ -22,7 +22,7 @@ const About = () => (
         className='mt-[50px] px-[50px] font-normal sm:text-[32px] text-[20px] text-center text-slate-400'
       >
         Welcome to <span className='font-extrabold text-slate-500'>By The Sea Landscaping</span>
-        , located on Sydney's Northern Beaches. We take pride in offering a comprehensive range of lawn care and garden maintenance services to suit any need. Our experienced team of professionals is dedicated to delivering exceptional results that exceed your expectations. Whether you need lawn mowing and edging or complete garden make-overs we’ve got you covered.
+        , located on Sydney's Northern Beaches. We take pride in offering a comprehensive range of lawn care and garden maintenance services to suit any need. Our experienced team of professionals is dedicated to delivering exceptional results that exceed your expectations. From mowing and edging to complete garden make-overs, we’ve got you covered.
       </motion.p>
 
       <motion.p
