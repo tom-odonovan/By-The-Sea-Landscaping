@@ -11,7 +11,6 @@ import { latestProjects } from '../constants';
 const Explore = () => {
 
   const [active, setActive] = useState('project-2')
-  console.log(latestProjects)
 
   return (
     <section className={`${styles.paddings}`} id='explore'>

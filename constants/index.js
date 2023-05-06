@@ -2,7 +2,7 @@ export const latestProjects = [
   {
     id: 'project-1',
     imgUrl: '/project-1.jpeg',
-    title: 'Mosman',
+    title: 'Seaforth',
   },
   {
     id: 'project-2',
@@ -11,7 +11,7 @@ export const latestProjects = [
   },
   {
     id: 'project-3',
-    imgUrl: '/project-3.jpg',
+    imgUrl: '/project-3.jpeg',
     title: 'Narrabeen',
   },
   {
