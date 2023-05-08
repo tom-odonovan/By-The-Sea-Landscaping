@@ -1,5 +1,8 @@
 import { Footer, Navbar } from '../components';
-import { Hero, About, Explore, Services, WhatsNew, World, Blog, Feedback, GetInTouch } from '../sections';
+import { Hero, About, Explore, WhatsNew, World, Feedback } from '../sections';
+import Services from '../sections/Services';
+import Blog from '../sections/Blog';
+import GetInTouch from '../sections/GetInTouch';
 
 
 const Page = () => (
