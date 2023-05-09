@@ -8,7 +8,7 @@ import { staggerContainer, fadeIn, planetVariants } from '../utils/motion'
 import { startingFeatures } from '../constants';
 
 
-export const Services = () => (
+export const WhyChooseUs = () => (
   <section className={`${styles.paddings}  relative z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -22,8 +22,8 @@ export const Services = () => (
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src="/get-started.png"
-          alt='Get Started'
+          src="/poolside-01.jpeg"
+          alt='Poolside'
           className='w-[90%] h-[90%] object-contain'
         />
       </motion.div>
@@ -31,10 +31,20 @@ export const Services = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className='flex-[0.75] flec justify-center flex-col'
       >
-        <TypingText title='| ' />
+        <TypingText title='| WHY CHOOSE US' />
+        <TitleText title={<>Why Choose By The Sea Landscapers?</>}/>
+        <div className='mt-[31px] flex flex-col max-w-[370px]  gap-[24px]'>
+          {startingFeatures.map((feature, index) => (
+            <StartSteps
+              key={feature}
+              number={index + 1}
+              text={feature}
+            />
+          ))}
+        </div>
       </motion.div>
     </motion.div>
   </section>
 );
 
-export default Services;
+export default WhyChooseUs;

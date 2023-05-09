@@ -1,23 +1,23 @@
 import { Footer, Navbar } from '../components';
-import { Hero, About, Explore, WhatsNew, World, Feedback } from '../sections';
-import Services from '../sections/Services';
+import { Hero, About, Explore, Feedback, WhatsNew, World } from '../sections';
 import Blog from '../sections/Blog';
+import WhyChooseUs from '../sections/WhyChooseUs';
 import GetInTouch from '../sections/GetInTouch';
 
 
+
 const Page = () => (
-  <div className='bg-primary-white overflow-hidden'>
+  <div className='bg-primary-white overflow-hidden font-sans'>
     <Navbar />
     <Hero />
     <div className='relative'>
       <About />
-      <Explore />
+      <WhyChooseUs />
     </div>
     <div className='relative'>
-      <Services />
+      <Explore />
       <WhatsNew />
     </div>
-    <World />
     <div className='relative'>
       <Blog />
       <Feedback />

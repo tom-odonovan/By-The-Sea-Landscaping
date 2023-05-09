@@ -2,17 +2,17 @@ export const latestProjects = [
   {
     id: 'project-1',
     imgUrl: '/project-1.jpeg',
-    title: 'Seaforth',
+    title: 'Narrabeen',
   },
   {
     id: 'project-2',
     imgUrl: '/project-2.jpeg',
-    title: 'Fairlight',
+    title: 'Newport',
   },
   {
     id: 'project-3',
     imgUrl: '/project-3.jpeg',
-    title: 'Narrabeen',
+    title: 'Palm Beach',
   },
   {
     id: 'project-4',

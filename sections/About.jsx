@@ -12,10 +12,10 @@ const About = () => (
       variants={staggerContainer}
       initial='hidden'
       whileInView='show'
-      viewport={{ once: false, amount: 0.25}}
+      viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title='| About Us' textStyles='text-center' />
+      <TypingText title='ABOUT US' textStyles='text-center' />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
