@@ -1,50 +1,54 @@
 'use client';
 
-
 import { motion } from 'framer-motion';
-import { StartSteps, TypingText, TitleText } from '../components';
+import { TitleText, TypingText } from '../components';
+import Guarantee from '../components/Guarantee';
 import styles from '../styles';
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion'
-import { startingFeatures } from '../constants';
+import { staggerContainer, fadeIn } from '../utils/motion'
+import { guarantee } from '../constants';
 
 
-export const WhyChooseUs = () => (
-  <section className={`${styles.paddings}  relative z-10`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: 'false', amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
-    >
+export const WhyChooseUs = () => {
+
+  return (
+    <section className={`${styles.paddings}  relative z-10`}>
       <motion.div
-        variants={planetVariants('left')}
-        className={`flex-1 ${styles.flexCenter}`}
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: 'false', amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-[200px]`}
       >
-        <img
-          src="/poolside-01.jpeg"
-          alt='Poolside'
-          className='w-[90%] h-[90%] object-contain'
-        />
+        <motion.div
+          variants={fadeIn('right', 'tween', 0.2, 1)}
+          className={`flex-[0.6] ${styles.flexCenter}`}
+        >
+          <img
+            src="/poolside-01.jpeg"
+            alt='Progress Circle'
+            className='object-contain'
+          />
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 'tween', 0.2, 1)}
+          className='flex-[0.75] flex justify-center flex-col'
+
+        >
+          <TypingText title='| Our Guarantee' />
+          <TitleText title={<>Why Choose Us?</>} />
+          <div className='mt-[31px] flex flex-col max-w-[570px]  gap-[24px]'>
+            {guarantee.map((item, index) => (
+              <Guarantee
+                key={index}
+                title={item.title}
+                text={item.text}
+              />
+            ))}
+          </div>
+        </motion.div>
       </motion.div>
-      <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75] flec justify-center flex-col'
-      >
-        <TypingText title='| WHY CHOOSE US' />
-        <TitleText title={<>Why Choose By The Sea Landscapers?</>}/>
-        <div className='mt-[31px] flex flex-col max-w-[370px]  gap-[24px]'>
-          {startingFeatures.map((feature, index) => (
-            <StartSteps
-              key={feature}
-              number={index + 1}
-              text={feature}
-            />
-          ))}
-        </div>
-      </motion.div>
-    </motion.div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default WhyChooseUs;

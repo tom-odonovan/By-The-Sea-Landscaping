@@ -161,30 +161,31 @@ export const footerVariants = {
 };
 
 export const animateOnScroll = {
-  initial: { 
-    y: 100, 
-    opacity: 0 },
-  animate: { 
-    y: 0, 
-    opacity: 1, 
-    transition: { 
-      duration: 0.6 
-    }, 
+  initial: {
+    y: 50,
+    opacity: 0
   },
-  exit: { 
-    y: 100, 
-    opacity: 0, 
-    transition: { 
-      duration: 0.6 
-    }, 
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6
+    },
   },
-  whileHover: { 
-    scale: 1.2, 
-    transition: { 
-      duration: 0.2 
-    }, 
+  exit: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      duration: 0.6
+    },
   },
-  whileTap: { 
-    scale: 1 
+  whileHover: {
+    scale: 1.2,
+    transition: {
+      duration: 0.2
+    },
+  },
+  whileTap: {
+    scale: 1
   },
 }

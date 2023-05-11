@@ -26,10 +26,19 @@ export const latestProjects = [
   },
 ];
 
-export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+export const guarantee = [
+  {
+    title: 'Affordable Prices',
+    text: 'We believe that a beautiful garden doesn\'t have to come with a hefty price tag. We offer high quality landscaping services at unbeatable prices.',
+  },
+  {
+    title: 'Personalized Service',
+    text: 'We understand that every client is unique. We take the time to understand your preferences and collaborate closely with you throughout the entire process.',
+  },
+  {
+    title: 'Attention to Detail',
+    text: 'We believe that the key to a stunning landscape lies in the details. We pay meticulous attention to every aspect of our work, from the precise edging of your lawn to the careful selection of the right plants and materials for your garden.',
+  }
 ];
 
 export const newFeatures = [

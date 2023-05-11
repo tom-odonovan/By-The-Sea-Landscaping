@@ -18,22 +18,23 @@ const ProgressCircle = ({ pageRef }) => {
 
 
     useLayoutEffect(() => {
-        const updateHeight = () => {
-            if (!pageRef.current) return;
-            const { height } = pageRef.current.getBoundingClientRect();
-            setProgress(window.scrollY / (height - window.innerHeight));
-        };
-
-        updateHeight();
-
-        window.addEventListener("scroll", updateHeight);
-        return () => {
-            window.removeEventListener("scroll", updateHeight);
-        };
+        if (typeof window !== 'undefined') {
+            const updateHeight = () => {
+                if (!pageRef.current) return;
+                const { height } = pageRef.current.getBoundingClientRect();
+                setProgress(window.scrollY / (height - window.innerHeight));
+            };
+    
+            updateHeight();
+    
+            window.addEventListener("scroll", updateHeight);
+            return () => {
+                window.removeEventListener("scroll", updateHeight);
+            };
+        }
     }, []);
 
     const scrollToTop = () => {
-        console.log('success')
         document.documentElement.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -43,7 +44,7 @@ const ProgressCircle = ({ pageRef }) => {
     return (
 
         <AnimatePresence>
-            {position < 0.95 && (
+            {position < 0.98 && (
                 <motion.button
                     onClick={scrollToTop}
                     className='floating-element fixed bottom-[50px] right-[50px] z-10 cursor-pointer'

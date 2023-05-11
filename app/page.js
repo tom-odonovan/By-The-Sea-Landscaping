@@ -16,7 +16,7 @@ const Page = () => {
   const pageRef = useRef();
 
   return (
-    <div className='bg-primary-white overflow-hidden font-sans' ref={pageRef}>
+    <div className='bg-[#f8faf0] text-gray-500 overflow-hidden font-sans' ref={pageRef}>
       <Navbar />
       <Hero />
       <div className='relative'>
