@@ -2,7 +2,7 @@
 
 const Feedback = () => (
   <section>
-    Feedback section
+    
   </section>
 );
 

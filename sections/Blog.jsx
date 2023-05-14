@@ -2,7 +2,7 @@
 
 const Blog = () => (
   <section>
-    Blog section
+    Insights
   </section>
 );
 

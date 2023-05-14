@@ -3,7 +3,8 @@
 import { Navbar } from '../components';
 import { Footer } from '../components';
 import ProgressCircle from '../components/ProgressCircle';
-import { Hero, About, Explore, Feedback, WhatsNew, World } from '../sections';
+import { Hero, About, Explore, Feedback } from '../sections';
+import Services from '../sections/Services';
 import Blog from '../sections/Blog';
 import WhyChooseUs from '../sections/WhyChooseUs';
 import GetInTouch from '../sections/GetInTouch';
@@ -16,22 +17,16 @@ const Page = () => {
   const pageRef = useRef();
 
   return (
-    <div className='bg-[#f8faf0] text-gray-500 overflow-hidden font-sans' ref={pageRef}>
+    <div className='bg-[#f8faf0] text-gray-500 font-sans' ref={pageRef}>
       <Navbar />
       <Hero />
-      <div className='relative'>
-        <About />
-        <WhyChooseUs />
-      </div>
-      <div className='relative'>
-        <Explore />
-        <WhatsNew />
-      </div>
-      <div className='relative'>
-        <Blog />
-        <Feedback />
-        <GetInTouch />
-      </div>
+      <About />
+      <Services />
+      <WhyChooseUs />
+      <Explore />
+      <Blog />
+      <Feedback />
+      <GetInTouch />
       <ProgressCircle pageRef={pageRef} />
       <Footer />
     </div>

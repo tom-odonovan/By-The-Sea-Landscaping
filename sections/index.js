@@ -2,7 +2,7 @@ import Hero from './Hero';
 import About from './About';
 import Explore from './Explore';
 import GetStarted from './WhyChooseUs';
-import WhatsNew from './WhatsNew';
+import WhatsNew from './Services';
 import World from './World';
 import Insights from './Blog';
 import Feedback from './Feedback';
