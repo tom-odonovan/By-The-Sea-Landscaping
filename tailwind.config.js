@@ -15,6 +15,11 @@ module.exports = {
       colors: {
         'primary-black': '#1A232E',
         'secondary-white': '#c7c7c7',
+        'palette-1': '#1C6758',
+        'palette-2': '#3CAB80',
+        'palette-3': '#90C8AC',
+        'palette-4': '#ECE9D5',
+        'palette-5': '#F8FAF0',
       },
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
