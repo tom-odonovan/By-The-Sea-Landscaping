@@ -2,39 +2,26 @@
 
 import { motion } from 'framer-motion';
 import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion'
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+  <section className={`sm:pl-16 pl-6`}>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
       whileInView='show'
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <div className='flex justify-left items-left flex-col relative z-10'>
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          By The Sea
-        </motion.h1>
-        <motion.div
-          variants={textVariant(1.2)}
-          className='flex flex-row justify-left items-left'
-        >
-          <h1 className={styles.heroHeading}>Landscaping</h1>
-
-        </motion.div>
-      </div>
-
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className='relative w-full md:-mt[20px] -mt-[12px]'
+        variants={fadeIn('down', 'tween', 0.2, 1)}
+        className='absolute top-[194px] left-0 w-full '
       >
         <div />
           <img
-            src='/cover.png'
+            src='/cover-01.jpeg'
             alt='cover'
-            className='w-full  sm:h-[500px] h-[300px] onject-cover rounded-tl-[140px] z-10 relative'
+            className='absolute w-[100vw] h-[1000px] object-cover brightness-75 z-[-10]'
           />
 
           <a href='#explore'>
@@ -49,6 +36,15 @@ const Hero = () => (
         
 
       </motion.div>
+
+      <div className='absolute top-[150px] flex justify-left items-left flex-col relative z-10'>
+        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+          By The Sea
+        </motion.h1>
+        <motion.h1 variants={textVariant(1.3)} className={styles.heroHeading}>
+          Landscaping
+        </motion.h1>
+      </div>
 
     </motion.div>
   </section>
