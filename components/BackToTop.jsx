@@ -6,10 +6,10 @@ import { BsArrowUp } from 'react-icons/bs';
 import { animateOnScroll } from '../utils/motion';
 
 
-const ProgressCircle = ({ pageRef }) => {
+const BackToTop = ({ pageRef }) => {
 
     const diameter = 50;
-    const strokeWidth = 3;
+    const strokeWidth = 2.5;
     const radius = diameter / 2 - strokeWidth / 2;
     const circumference = Math.PI * radius * 2;
 
@@ -61,13 +61,13 @@ const ProgressCircle = ({ pageRef }) => {
                             cy={diameter / 2}
                             r={radius}
                             stroke="#3CAB80"
-                            strokeWidth={strokeWidth}
+                            strokeWidth={`${strokeWidth}px`}
                             fill="transparent"
                             style={{ strokeDasharray: circumference, strokeDashoffset: circumference * position }}
                         />
                     </svg>
 
-                    <div className="absolute bottom-0 right-0 w-full h-full rounded-full border-4 border-opacity-50 z-[-1] flex items-center justify-center">
+                    <div className="absolute bottom-0 right-0 w-full h-full rounded-full border-3 border-opacity-50 z-[-1] flex items-center justify-center">
                         <BsArrowUp size={29} color='#3CAB80' />
                     </div>
                 </motion.button>
@@ -77,4 +77,4 @@ const ProgressCircle = ({ pageRef }) => {
     );
 };
 
-export default ProgressCircle;
+export default BackToTop;
