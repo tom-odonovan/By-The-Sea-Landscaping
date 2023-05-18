@@ -40,7 +40,7 @@ const Services = () => (
       >
         <img
           src="/services.jpeg"
-          alt='Progress Circle'
+          alt='Garden image'
           className='object-contain'
         />
       </motion.div>

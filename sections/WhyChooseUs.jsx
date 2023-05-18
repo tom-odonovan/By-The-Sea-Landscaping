@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import styles from '../styles';
 import { TitleText, TypingText } from '../components';
 import Guarantee from '../components/Guarantee';
-import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion'
 import { guarantee } from '../constants';
 
@@ -25,7 +25,7 @@ export const WhyChooseUs = () => {
         >
           <img
             src="/poolside-01.jpeg"
-            alt='Progress Circle'
+            alt='Poolside'
             className='object-contain'
           />
         </motion.div>

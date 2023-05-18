@@ -15,7 +15,7 @@ const Hero = () => (
     >
       <motion.div
         variants={fadeIn('down', 'tween', 0.2, 1)}
-        className='absolute top-[194px] left-0 w-full '
+        className='absolute top-[164px] left-0 w-full '
       >
         <div />
           <img

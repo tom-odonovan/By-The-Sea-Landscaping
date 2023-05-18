@@ -2,7 +2,7 @@
 
 const GetInTouch = () => (
     <section>
-        GetInTouch section
+        Contact form
     </section>
 );
 

@@ -1,3 +1,31 @@
+export const services = [
+  'Lawn mowing and edging',
+  'Leaf blowing and garden tidy ups',
+  'Mulching and fertilising',
+  'Hedging',
+  'Tree trimming and removal',
+  'Prepping and laying turf',
+  'Weed control',
+  'Pressure washing',
+  'Pool cleaning',
+  'Odd jobs and more'
+];
+
+export const guarantee = [
+  {
+    title: 'Affordable Prices',
+    text: 'We believe that a beautiful garden doesn\'t have to come with a hefty price tag. We offer high quality landscaping services at unbeatable prices.',
+  },
+  {
+    title: 'Personalized Service',
+    text: 'We understand that every client is unique. We take the time to understand your preferences and collaborate closely with you throughout the entire process.',
+  },
+  {
+    title: 'Attention to Detail',
+    text: 'We believe that the key to a stunning landscape lies in the details. We pay meticulous attention to every aspect of our work, from the precise edging of your lawn to the careful selection of the right plants and materials for your garden.',
+  }
+];
+
 export const latestProjects = [
   {
     id: 'project-1',
@@ -23,36 +51,6 @@ export const latestProjects = [
     id: 'project-5',
     imgUrl: '/project-5.jpeg',
     title: 'Church Point',
-  },
-];
-
-export const guarantee = [
-  {
-    title: 'Affordable Prices',
-    text: 'We believe that a beautiful garden doesn\'t have to come with a hefty price tag. We offer high quality landscaping services at unbeatable prices.',
-  },
-  {
-    title: 'Personalized Service',
-    text: 'We understand that every client is unique. We take the time to understand your preferences and collaborate closely with you throughout the entire process.',
-  },
-  {
-    title: 'Attention to Detail',
-    text: 'We believe that the key to a stunning landscape lies in the details. We pay meticulous attention to every aspect of our work, from the precise edging of your lawn to the careful selection of the right plants and materials for your garden.',
-  }
-];
-
-export const newFeatures = [
-  {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
-    subtitle:
-      'we have the latest update with new world for you to try never mind',
-  },
-  {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
-    subtitle:
-      'In the latest update, your eyes are narrow, making the world more realistic than ever',
   },
 ];
 

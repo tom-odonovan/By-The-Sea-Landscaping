@@ -12,11 +12,11 @@ const Navbar = () => (
     className={`${styles.xPaddings} py-8 relative bg-palette-1/[.85] sticky top-0 z-50`}
   >
     {/* <div className='absolute w-[50%] inset-0 gradient-01' /> */}
-    <div className={`max-w-[2400px] mx-auto flex justify-between gap-8 h-[60px] items-center`}>
+    <div className={`max-w-[2400px] mx-auto flex justify-between gap-8 h-[30px] items-center`}>
       <img
         src='/search.svg'
         alt='search'
-        className='w-[40px] h-[40px] object-contain cursor-pointer'
+        className='w-[30px] h-[30px] object-contain cursor-pointer'
       />
       {/* <h2 className='font-extrabold text-[24px] leading-[30px] text-palette-1'>
         BY THE SEA LANDSCAPING
@@ -24,12 +24,12 @@ const Navbar = () => (
       <img
         src='/Logos/Logo-text-dark.png'
         alt='logo'
-        className='h-[60px]' 
+        className='h-[40px]' 
       />
       <img
         src='/menu.svg'
         alt='menu'
-        className='w-[40px] h-[40px] object-contain cursor-pointer' 
+        className='w-[30px] h-[30px] object-contain cursor-pointer' 
       />
     </div>
   </motion.nav>
