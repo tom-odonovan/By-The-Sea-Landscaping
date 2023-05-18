@@ -1,14 +1,28 @@
 export const services = [
-  'Lawn mowing and edging',
-  'Leaf blowing and garden tidy ups',
-  'Mulching and fertilising',
-  'Hedging',
-  'Tree trimming and removal',
-  'Prepping and laying turf',
-  'Weed control',
-  'Pressure washing',
-  'Pool cleaning',
-  'Odd jobs and more'
+  {
+    img: '/icons/mower-icon.svg',
+    alt: 'Mower Icon',
+    title: 'Landscaping Services',
+    text: 'We offer a full range of landscaping services, from design to construction and maintenance. We can help you create a beautiful garden that will be the envy of your neighbours.',
+  },
+  {
+    img: '/icons/trees-icon.svg',
+    alt: 'Trees Icon',
+    title: 'Tree and Plant Care',
+    text: 'We offer a full range of tree and plant care services, from pruning to fertilizing. We can help you keep your trees healthy and beautiful all year round.',
+  },
+  {
+    img: '/icons/grass-icon.svg',
+    alt: 'Turf Laying Icon',
+    title: 'Turf Laying',
+    text: 'We offer a full range of turf laying services, from design to construction and maintenance. We can help you create a beautiful garden that will be the envy of your neighbours.',
+  },
+  {
+    img: '/icons/care-icon.svg',
+    alt: 'Garden Maintenance Icon',
+    title: 'Garden Maintenance',
+    text: 'We offer a full range of garden maintenance services, from pruning to fertilizing. We can help you keep your garden healthy and beautiful all year round.',
+  }
 ];
 
 export const guarantee = [
@@ -29,49 +43,28 @@ export const guarantee = [
 export const latestProjects = [
   {
     id: 'project-1',
-    imgUrl: '/project-1.jpeg',
+    imgUrl: '/imgs/project-1.jpeg',
     title: 'Narrabeen',
   },
   {
     id: 'project-2',
-    imgUrl: '/project-2.jpeg',
+    imgUrl: '/imgs/project-2.jpeg',
     title: 'Newport',
   },
   {
     id: 'project-3',
-    imgUrl: '/project-3.jpeg',
+    imgUrl: '/imgs/project-3.jpeg',
     title: 'Palm Beach',
   },
   {
     id: 'project-4',
-    imgUrl: '/project-4.jpeg',
+    imgUrl: '/imgs/project-4.jpeg',
     title: 'Monavale',
   },
   {
     id: 'project-5',
-    imgUrl: '/project-5.jpeg',
+    imgUrl: '/imgs/project-5.jpeg',
     title: 'Church Point',
-  },
-];
-
-export const insights = [
-  {
-    imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
-    subtitle:
-      'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
-  },
-  {
-    imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
-    subtitle:
-      'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
-  },
-  {
-    imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
-    subtitle:
-      'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
   },
 ];
 

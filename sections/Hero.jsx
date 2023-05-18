@@ -15,16 +15,16 @@ const Hero = () => (
     >
       <motion.div
         variants={fadeIn('down', 'tween', 0.2, 1)}
-        className='absolute top-[164px] left-0 w-full '
+        className='absolute left-0 w-full '
       >
         <div />
           <img
-            src='/cover-01.jpeg'
+            src='/imgs/cover-01.jpeg'
             alt='cover'
             className='absolute w-[100vw] h-[1000px] object-cover brightness-75 z-[-10]'
           />
 
-          <a href='#explore'>
+          {/* <a href='#explore'>
             <div className='w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10'>
               <img
                 src='/stamp.png'
@@ -32,7 +32,7 @@ const Hero = () => (
                 className='sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain'
               />
             </div>
-          </a>
+          </a> */}
         
 
       </motion.div>

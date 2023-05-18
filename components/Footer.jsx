@@ -1,8 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import styles from '../styles';
-import { navVariants } from '../utils/motion'
 
 const Footer = () => (
   <footer className={`${styles.xPaddings} py-8 relative bg-palette-1 z-5 opacity-90`}
