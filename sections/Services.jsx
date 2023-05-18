@@ -1,51 +1,53 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
-import ServicesComp from '../components/ServicesComp';
+import ServicesCard from '../components/ServicesCard';
 import { staggerContainer, fadeIn } from '../utils/motion'
 import { services } from '../constants';
 
 
-const Services = () => (
-  <section className={`${styles.paddings}  relative z-10`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-[200px]`}
-    >
-      
-      <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
-        className='flex-[0.75] flex justify-center flex-col'
+const Services = () => {
 
+  const [active, setActive] = useState('Landscaping Services')
+
+  return (
+
+    <section className={`${styles.paddings}  relative z-10`}>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex lg:flex-col flex-col gap-[50px]`}
       >
-        <TypingText title='| Services' />
-        <TitleText title={<>What We Offer</>} />
-        <div className='mt-[31px] flex flex-col max-w-[570px]  gap-[24px]'>
+        
+        <motion.div
+          variants={fadeIn('right', 'tween', 0.2, 1)}
+          className='flex-[0.75] flex justify-center flex-col'
+
+        >
+          <TypingText title='| Our Services' />
+          <TitleText title={<>What We Offer</>} />
+        </motion.div>
+
+        <div className={`${styles.flexCenter} flex flex-row gap-[10px] sm:flex-wrap`}>
           {services.map((item, index) => (
-            <ServicesComp
+            <ServicesCard 
               key={index}
-              item={item}
+              {...item}
+              active={active}
+              handleClick={setActive}
             />
           ))}
+          
         </div>
+        
       </motion.div>
-      <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
-        className={`flex-[0.6] ${styles.flexCenter}`}
-      >
-        <img
-          src="/services.jpeg"
-          alt='Garden image'
-          className='object-contain'
-        />
-      </motion.div>
-    </motion.div>
-  </section>
-);
+    </section>
+  )
+};
 
 export default Services;
