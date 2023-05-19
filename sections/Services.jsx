@@ -33,7 +33,7 @@ const Services = () => {
           <TitleText title={<>What We Offer</>} />
         </motion.div>
 
-        <div className={`${styles.flexCenter} flex flex-row gap-[10px] flex-wrap`}>
+        <div className={`${styles.flexCenter} flex flex-row gap-[10px] flex-wrap w-full md:w-[600px] min-[1100px]:w-[1200px] mx-auto`}>
           {services.map((item, index) => (
             <ServicesCard 
               key={index}
@@ -54,8 +54,8 @@ const Services = () => {
             alt='Poolside'
             className='w-1/3 object-cover'
           />
-        </div>
-        <div className={`${styles.flexCenter} px-8 absolute top-[450px] right-[400px] w-[300px] h-[350px] bg-palette-2 rounded text-white flex flex-col gap-5 text-center`}>
+
+          <div className={`${styles.flexCenter} px-8 absolute top-[150px] right-[20%] w-[300px] h-[350px] bg-palette-2 rounded text-white flex flex-col gap-5 text-center drop-shadow-xl`}>
             <img
               src='/icons/leaf-icon.svg'
               alt='Leaf Icon'
@@ -63,8 +63,10 @@ const Services = () => {
             />
             <h3 className='text-[28px] font-sans-bold'>Let's Get Started!</h3>
             <p>Get in touch today for a free quote and consoltation</p>
-            <button className='font-bold border-[1px] border-white my-4 px-6 py-2 rounded-lg hover:bg-white hover:text-palette-2 transition duration-300'>CONTACT US</button>
+            <button className='font-bold border-[1px] border-white my-4 px-6 py-2 rounded-xl hover:bg-white hover:text-palette-2 transition duration-300'>CONTACT US</button>
+          </div>
         </div>
+        
         
       </motion.div>
     </section>
