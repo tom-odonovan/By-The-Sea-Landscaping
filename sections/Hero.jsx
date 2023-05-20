@@ -19,7 +19,7 @@ const Hero = () => (
       >
         <div />
           <img
-            src='/imgs/cover-01.jpeg'
+            src='/imgs/mowing-man.jpg'
             alt='cover'
             className='absolute w-[100vw] h-[1000px] object-cover brightness-75 z-[-10]'
           />

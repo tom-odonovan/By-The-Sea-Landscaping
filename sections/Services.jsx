@@ -5,13 +5,14 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
 import ServicesCard from '../components/ServicesCard';
+import ServiceInfo from '../components/ServiceInfo';
 import { staggerContainer, fadeIn } from '../utils/motion'
 import { services } from '../constants';
 
 
 const Services = () => {
 
-  const [active, setActive] = useState('Landscaping Services')
+  const [active, setActive] = useState(services[0])
 
   return (
 
@@ -33,41 +34,19 @@ const Services = () => {
           <TitleText title={<>What We Offer</>} />
         </motion.div>
 
-        <div className={`${styles.flexCenter} flex flex-row gap-[10px] flex-wrap w-full md:w-[600px] min-[1100px]:w-[1200px] mx-auto`}>
+        <div className={`${styles.flexCenter} flex flex-row gap-[10px] flex-wrap w-full md:w-[600px] min-[1100px]:w-[1200px] mx-auto z-10`}>
           {services.map((item, index) => (
             <ServicesCard 
               key={index}
-              {...item}
+              service={item}
               active={active}
               handleClick={setActive}
             />
           ))}
         </div>
-
-        <div className='relative -top-[100px] -z-10 flex flex-row w-[100vw] max-h-[600px]'>
-          <div className={`${styles.flexCenter} bg-white w-2/3`}>
-            <h3 className='font-bold text-[24px]'>{active}</h3>
-            <p></p>
-          </div>
-          <img
-            src="/poolside-01.jpeg"
-            alt='Poolside'
-            className='w-1/3 object-cover'
-          />
-
-          <div className={`${styles.flexCenter} px-8 absolute top-[150px] right-[20%] w-[300px] h-[350px] bg-palette-2 rounded text-white flex flex-col gap-5 text-center drop-shadow-xl`}>
-            <img
-              src='/icons/leaf-icon.svg'
-              alt='Leaf Icon'
-              className='w-[70px] h-[70px] object-contain'
-            />
-            <h3 className='text-[28px] font-sans-bold'>Let's Get Started!</h3>
-            <p>Get in touch today for a free quote and consoltation</p>
-            <button className='font-bold border-[1px] border-white my-4 px-6 py-2 rounded-xl hover:bg-white hover:text-palette-2 transition duration-300'>CONTACT US</button>
-          </div>
-        </div>
-        
-        
+      
+        <ServiceInfo active={active} />
+      
       </motion.div>
     </section>
   )

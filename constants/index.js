@@ -1,27 +1,47 @@
 export const services = [
   {
-    img: '/icons/mower-icon.svg',
-    alt: 'Mower Icon',
+    icon: {
+      img: '/icons/mower-icon.svg',
+      alt: 'Mower Icon',
+    },
+    img: '/imgs/mowing-man.jpg',
+    alt: 'Man mowing lawn',
+    subtitle: 'Transform Your Space',
     title: 'Landscaping Services',
-    text: 'We offer a full range of landscaping services, from design to construction and maintenance. We can help you create a beautiful garden that will be the envy of your neighbours.',
+    text: 'Our landscaping services are designed to transform your outdoor space into a vibrant and well-maintained environment. From precise lawn mowing and edging to removing leaves and tidying up your garden, we pay attention to every detail. \nOur expert team also specializes in mulching and fertilizing to nourish your plants and promote healthy growth. With a focus on enhancing the aesthetic appeal and functionality of your landscape, we create beautiful outdoor spaces you can enjoy year-round.',
   },
   {
-    img: '/icons/trees-icon.svg',
-    alt: 'Trees Icon',
+    icon: {
+      img: '/icons/trees-icon.svg',
+      alt: 'Trees Icon',
+    },
+    img: '/imgs/hedge-trimming.jpg',
+    alt: 'Man trimming hedge',
+    subtitle: 'Beautiful Tree Solutions',
     title: 'Tree and Plant Care',
-    text: 'We offer a full range of tree and plant care services, from pruning to fertilizing. We can help you keep your trees healthy and beautiful all year round.',
+    text: 'We understand the importance of proper tree and plant care for a healthy and attractive landscape. Our skilled professionals provide expert hedging services to maintain the shape and density of your hedges. \nWe also offer tree trimming and removal to ensure the safety and beauty of your property. Whether you need regular pruning or assistance with tree removal, we have the knowledge and equipment to handle the task efficiently and safely.',
   },
   {
-    img: '/icons/grass-icon.svg',
-    alt: 'Turf Laying Icon',
+    icon: {
+      img: '/icons/grass-icon.svg',
+      alt: 'Turf Laying Icon',
+    },
+    img: '/imgs/grass-texture.jpg',
+    alt: 'Grass close up',
+    subtitle: 'Elevate Your Yard',
     title: 'Turf Laying',
-    text: 'We offer a full range of turf laying services, from design to construction and maintenance. We can help you create a beautiful garden that will be the envy of your neighbours.',
+    text: 'Achieve a lush and vibrant lawn with our comprehensive turf services. We specialize in prepping and laying turf to create a fresh, even, and vibrant green carpet that enhances the beauty of your outdoor space. \nOur dedicated team ensures proper soil preparation, precise turf installation, and tailored care instructions, giving you a healthy and stunning lawn. With our expertise and attention to detail, we\'ll transform your yard into a picturesque setting that you can enjoy with family and friends.',
   },
   {
-    img: '/icons/care-icon.svg',
-    alt: 'Garden Maintenance Icon',
+    icon: {
+      img: '/icons/care-icon.svg',
+      alt: 'Garden Maintenance Icon',
+    },
+    img: '/imgs/pressure-cleaning.jpg',
+    alt: 'Man pressure cleaning',
+    subtitle: 'Maintain Your Oasis',
     title: 'Garden Maintenance',
-    text: 'We offer a full range of garden maintenance services, from pruning to fertilizing. We can help you keep your garden healthy and beautiful all year round.',
+    text: 'Maintaining a well-kept outdoor space requires regular maintenance. Our maintenance services cover essential tasks such as weed control, ensuring that unwanted weeds don\'t compete with your plants for nutrients and space. \nWe also provide pressure washing to revitalize your outdoor surfaces, removing dirt, grime, and stains. Additionally, our pool cleaning service guarantees crystal-clear waters, creating a welcoming and refreshing oasis right in your backyard.',
   }
 ];
 
