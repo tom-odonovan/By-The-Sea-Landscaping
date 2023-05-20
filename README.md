@@ -1,4 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+>Freelance Website Build
+# By The Sea Landscaping
+
+This repository contains the code for a small landscaping business website built using React, Next.js, Tailwind, and Framer Motion. The website aims to showcase the services offered by the landscaping business and provide information to potential clients.
+
+## Features
+
+- **Responsive Design:** The website is designed to provide an optimal viewing experience across various devices, including desktops, tablets, and mobile phones.
+
+- **Sections and Components:** The website is organized into several sections, including a hero section, about section, services section, blog section, and more. Each section is implemented as a reusable component to maintain code modularity.
+
+- **Contact Form:** A contact form is provided to allow visitors to get in touch with the landscaping business directly. The form includes fields for name, email, subject, and message, enhancing communication with potential clients.
+
+- **Navigation and Footer:** The website includes a navigation bar for easy navigation between sections and a footer section containing relevant links and information.
+
+- **Back to Top Button:** A "Back to Top" button is provided to allow users to quickly navigate back to the top of the page, enhancing the user experience.
+
+## Technologies Used
+
+- **React:** A JavaScript library for building user interfaces, used as the foundation of the website.
+
+- **Next.js:** A React framework for server-rendered applications, providing improved performance, SEO capabilities, and easy routing.
+
+- **Tailwind CSS:** A utility-first CSS framework used for styling the website. It provides a responsive and customizable design system.
+
+- **Framer Motion:** A popular animation library for React, used to add smooth and engaging animations to various elements of the website.
+
+## Feedback 
+
+Feedback and suggestions for this project is welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. Ensure that you follow the established coding guidelines and best practices.
+
+## Acknowlegements 
+
+- [By The Sea Landscaping](#) 
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
 
 ## Getting Started
 
@@ -11,24 +48,3 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
