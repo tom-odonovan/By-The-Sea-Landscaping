@@ -3,9 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles';
-import { TitleText, TypingText } from '../components';
-import ServicesCard from '../components/ServicesCard';
-import ServiceInfo from '../components/ServiceInfo';
+import { TitleText, TypingText, ServicesCard, ServiceInfo } from '../components';
 import { staggerContainer, fadeIn } from '../utils/motion'
 import { services } from '../constants';
 

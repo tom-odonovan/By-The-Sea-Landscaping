@@ -3,8 +3,8 @@
 import styles from '../styles';
 
 const ServiceInfo = ({ active }) => (
-    <div className='relative -top-[100px] z-1 flex flex-row w-[100vw] h-fit md:h-[600px]'>
-        <div className={`${styles.paddings} bg-white w-2/3 flex items-center justify-end`}>
+    <div className='relative -top-[100px] z-1 flex flex-col md:flex-row w-[100vw] h-full lg:h-[600px] shadow-2xl'>
+        <div className={`${styles.paddings} bg-white w-full md:w-2/3 flex items-center justify-end`}>
             <div className='w-fit flex flex-col my-8 py-4 pl-16 border-l-[1px] border-palette-2'>
                 <div className='flex flex-row items-center w-full max-w-[600px]'>
                     <img
@@ -25,10 +25,9 @@ const ServiceInfo = ({ active }) => (
         <img
             src={active.img}
             alt={active.alt}
-            className='w-1/3 object-cover'
+            className='w-full md:w-1/3 object-cover'
         />
-
-        <div className={`${styles.flexCenter} px-8 absolute top-[150px] right-[10%] w-[300px] h-[350px] bg-palette-2 rounded-md text-white flex flex-col gap-5 text-center shadow-2xl z-5`}>
+        <div className={`${styles.flexCenter} px-8 absolute top-[50%] right-[50%] translate-x-[50%] translate-y-0 md:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] md:translate-x-0 md:-translate-y-[50%] w-[300px] h-[350px] bg-palette-2 rounded-md text-white flex flex-col gap-5 text-center shadow-2xl z-5 transition duration-500`}>
             <img
                 src='/icons/leaf-icon.svg'
                 alt='Leaf Icon'
