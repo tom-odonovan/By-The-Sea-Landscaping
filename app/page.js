@@ -1,15 +1,7 @@
 'use client';
 
-import { Navbar } from '../components';
-import { Footer } from '../components';
-import BackToTop from '../components/BackToTop';
-import { Hero, About, Explore, Feedback } from '../sections';
-import Services from '../sections/Services';
-import Blog from '../sections/Blog';
-import WhyChooseUs from '../sections/WhyChooseUs';
-import GetInTouch from '../sections/GetInTouch';
-import FollowUs from '../sections/FollowUs';
-
+import { Navbar, Footer, BackToTop } from '../components';
+import { Hero, About, Services, Explore, WhyChooseUs, Blog, Feedback, FollowUs, GetInTouch } from '../sections';
 
 import { useRef } from 'react';
 

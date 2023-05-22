@@ -18,7 +18,7 @@ const ServiceInfo = ({ active }) => (
                     </div>
                 </div>
                 {active.text.split('\n').map((p, index) => (
-                    <p className='mt-8 max-w-[600px]' key={index}>{p}</p>
+                    <p className='mt-8 max-w-[600px] text-[14px]' key={index}>{p}</p>
                 ))}
             </div>
         </div>
@@ -27,15 +27,15 @@ const ServiceInfo = ({ active }) => (
             alt={active.alt}
             className='w-full md:w-1/3 object-cover'
         />
-        <div className={`${styles.flexCenter} px-8 absolute top-[50%] right-[50%] translate-x-[50%] translate-y-0 md:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] md:translate-x-0 md:-translate-y-[50%] w-[300px] h-[350px] bg-palette-2 rounded-md text-white flex flex-col gap-5 text-center shadow-2xl z-5 transition duration-500`}>
+        <div className={`${styles.flexCenter} px-8 absolute top-[55%] sm:top-[50%] right-[50%] md:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] translate-x-[50%] md:translate-x-0 translate-y-0 md:-translate-y-[50%] w-[250px] sm:w-[300px] h-[300px] sm:h-[350px] bg-palette-2 rounded-md text-white flex flex-col gap-5 text-center shadow-2xl z-5 transition duration-500`}>
             <img
                 src='/icons/leaf-icon.svg'
                 alt='Leaf Icon'
                 className='w-[70px] h-[70px] object-contain'
             />
-            <h3 className='text-[28px] font-sans-bold'>Ready To Get Started?</h3>
-            <p>Get in touch today for a free quote and consoltation</p>
-            <button className='font-bold border-[1px] border-white my-4 px-6 py-2 rounded-xl hover:bg-white hover:text-palette-2 transition duration-300'>CONTACT US</button>
+            <h3 className='text-[22px] sm:text-[28px] font-sans-bold'>Ready To Get Started?</h3>
+            <p className='text-[14px]'>Get in touch today for a free quote and consoltation</p>
+            <button className='font-bold border-[1px] border-white px-6 py-2 rounded-xl hover:bg-white hover:text-palette-2 active:scale-95 transition duration-300'>CONTACT US</button>
         </div>
     </div>
 );

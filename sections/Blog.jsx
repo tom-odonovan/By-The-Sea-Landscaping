@@ -19,7 +19,7 @@ const Blog = () => (
       <TypingText title='| Blog' textStyles='text-center' />
       <TitleText title='Latest Posts' textStyles='text-center' />
 
-      <div className={`mt-[70px] flex flex-col gap-[30px]`}>
+      <div className={`mt-[70px] flex flex-col gap-[30px] max-w-[1000px] mx-auto`}>
         {blog.map((item, index) => (
           <BlogCard 
             key={item.id}

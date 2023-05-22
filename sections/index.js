@@ -1,19 +1,21 @@
 import Hero from './Hero';
 import About from './About';
+import Services from './Services';
+import WhyChooseUs from './WhyChooseUs';
 import Explore from './Explore';
-import GetStarted from './WhyChooseUs';
-import WhatsNew from './Services';
-import World from './FollowUs';
-import Insights from './Blog';
+import Blog from './Blog';
+import FollowUs from './FollowUs';
 import Feedback from './Feedback';
+import GetInTouch from './GetInTouch';
 
 export {
   Hero,
   About,
+  Services,
   Explore,
-  GetStarted,
-  WhatsNew,
-  World,
-  Insights,
+  WhyChooseUs,
+  Blog,
+  FollowUs,
   Feedback,
+  GetInTouch,
 };

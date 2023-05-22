@@ -7,10 +7,10 @@ const Guarantee = ({ title, text }) => (
       <BsCheck2 size={40} color='#fff' />
     </div>
     <div className="flex flex-col flex-1 ml-[30px]">
-      <h4 className="md:text-[20px] sm:text-[18px] text-[18px] text-[#1c6758] font-roboto font-bold uppercase pb-[15px]">
+      <h4 className="md:text-[20px] sm:text-[18px] text-[18px] text-[#1c6758] font-bold text-palette-2 pb-[15px]">
         {title}
       </h4>
-      <p className="font-normal md:text-[16px] sm:text-[14px] text-[12px]">
+      <p className="font-normal xl:text-[16px] sm:text-[14px] text-[12px]">
         {text}
       </p>
     </div>
