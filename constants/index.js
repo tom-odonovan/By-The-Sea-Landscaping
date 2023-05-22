@@ -1,3 +1,30 @@
+export const navbar = [
+  {
+    name: 'Home',
+    href: '#home',
+  },
+  {
+    name: 'About',
+    href: '#about',
+  },
+  {
+    name: 'Services',
+    href: '#services',
+  },
+  {
+    name: 'Gallery',
+    href: '#gallery',
+  },
+  {
+    name: 'Blog',
+    href: '#blog',
+  },
+  {
+    name: 'Contact',
+    href: '#contact',
+  },
+]
+
 export const services = [
   {
     icon: {
@@ -91,7 +118,7 @@ export const latestProjects = [
 export const blog = [
   {
     id: 'blog-1',
-    date: 'May 15, 2023',
+    date: 'May 20, 2023',
     imgUrl: '/imgs/vertical-garden.jpg',
     title: 'Making The Most of Small Spaces',
     subtitle: 'Landscaping Ideas for Compact Yards',
@@ -128,7 +155,7 @@ export const blog = [
   },
   {
     id: 'blog-2',
-    date: 'May 20, 2023',
+    date: 'May 15, 2023',
     imgUrl: '/imgs/sprinkler.jpg',
     title: "Mastering the Basics: Lawn Care 101",
     subtitle: "A Comprehensive Guide to Achieving a Healthy and Vibrant Lawn",
@@ -175,19 +202,15 @@ export const blog = [
 
 export const socials = [
   {
-    name: 'twitter',
-    url: '/twitter.svg',
-  },
-  {
-    name: 'linkedin',
-    url: '/linkedin.svg',
-  },
-  {
     name: 'instagram',
-    url: '/instagram.svg',
+    url: '/icons/instagram.svg',
   },
   {
     name: 'facebook',
-    url: '/facebook.svg',
+    url: '/icons/facebook.svg',
+  },
+  {
+    name: 'linkedin',
+    url: '/icons/linkedin.svg',
   },
 ];

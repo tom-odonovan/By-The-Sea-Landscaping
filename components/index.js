@@ -1,16 +1,22 @@
 import Navbar from './Navbar';
 import { TypingText, TitleText } from './CustomTexts';
 import ExploreCard from './ExploreCard';
-import StartSteps from './Guarantee';
-import InsightCard from './InsightCard';
+import Guarantee from './Guarantee';
+import ServicesCard from './ServicesCard';
+import ServiceInfo from './ServiceInfo';
+import BlogCard from './BlogCard';
+import BackToTop from './BackToTop';
 import Footer from './Footer';
 
 export {
   Navbar,
   TitleText,
   TypingText,
-  StartSteps,
+  ServicesCard,
+  ServiceInfo,
+  Guarantee,
   ExploreCard,
-  InsightCard,
+  BlogCard,
+  BackToTop,
   Footer,
 };
