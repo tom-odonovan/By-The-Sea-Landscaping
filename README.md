@@ -1,6 +1,10 @@
 >Freelance Website Build
 # By The Sea Landscaping
 
+</br>
+<img height='550' src="./public/imgs/cover-sc.png" alt="Website screenshot" /> 
+</br>
+
 This repository contains the code for a small landscaping business website built using React, Next.js, Tailwind, and Framer Motion. The website aims to showcase the services offered by the landscaping business and provide information to potential clients.
 
 ## Features
