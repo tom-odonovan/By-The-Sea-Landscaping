@@ -5,7 +5,7 @@ export const navbar = [
   },
   {
     name: 'About',
-    href: '#about',
+    href: '#About',
   },
   {
     name: 'Services',
@@ -203,14 +203,17 @@ export const blog = [
 export const socials = [
   {
     name: 'instagram',
-    url: '/icons/instagram.svg',
+    icon: '/icons/instagram.svg',
+    href: 'https://www.instagram.com/bythesealandscaping/',
   },
   {
     name: 'facebook',
-    url: '/icons/facebook.svg',
+    icon: '/icons/facebook.svg',
+    href: 'https://www.facebook.com/bythesealandscapes',
   },
   {
     name: 'linkedin',
-    url: '/icons/linkedin.svg',
+    icon: '/icons/linkedin.svg',
+    href: '#',
   },
 ];

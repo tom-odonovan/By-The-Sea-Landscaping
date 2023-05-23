@@ -24,7 +24,7 @@ export const WhyChooseUs = () => {
           className={`flex-[0.6] ${styles.flexCenter}`}
         >
           <img
-            src="/poolside-01.jpeg"
+            src="/imgs/poolside-01.jpeg"
             alt='Poolside'
             className='object-contain'
           />

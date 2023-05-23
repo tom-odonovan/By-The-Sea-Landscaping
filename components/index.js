@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import Header from './Header';
 import { TypingText, TitleText } from './CustomTexts';
 import ExploreCard from './ExploreCard';
 import Guarantee from './Guarantee';
@@ -9,7 +9,7 @@ import BackToTop from './BackToTop';
 import Footer from './Footer';
 
 export {
-  Navbar,
+  Header,
   TitleText,
   TypingText,
   ServicesCard,
