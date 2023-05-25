@@ -19,7 +19,7 @@ const SideBar = ({ active, handleClick }) => (
                 </button>
             </div>
             <img
-                src='/Logos/Logo-light.png'
+                src='/Logos/bts-logo.jpeg'
                 alt='logo'
                 className='relative w-[200px] -top-[30px] pb-8'
             />
@@ -50,16 +50,17 @@ const SideBar = ({ active, handleClick }) => (
             </div>
 
             <div className='flex gap-4 py-16 justify-center'>
-                {socials.map(({ name, icon, href }) => (
-                    <a href={href}>
-                        <img
-                            key={name}
-                            src={icon}
-                            alt={name}
-                            className='w-[24px] h-[24px] object-contain cursor-pointer'
-                        />
-                    </a>
-                ))}
+                {socials.map(({ name, icon, href }) => {
+                    const SocialIcon = icon;
+
+                    return (
+                        <a href={href}>
+                            <div className={`${styles.flexCenter} w-[40px] h-[40px] rounded-full bg-palette-1 border-[1px] border-white hover:border-palette-1 cursor-pointer hover:bg-white opacity-80 transition duration-300 group`}>
+                                <SocialIcon size={20} className='text-white group-hover:text-palette-1' />
+                            </div>
+                        </a>
+                    )
+                })}
             </div>
 
         </div>

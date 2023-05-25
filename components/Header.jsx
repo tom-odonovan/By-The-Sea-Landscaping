@@ -25,32 +25,34 @@ const Header = () => {
           alt='logo'
           className='h-[40px]'
         />
-        <nav className='hidden lg:flex'>
-          <ul className='flex flex-row gap-8 xl:gap-12'>
-            {navbar.map(({ name, url }) => (
-              <li key={name} className='text-white text-[12px] sm:text-[14px] font-bold'>
-                <a
-                  href={url}
-                  className='relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group opacity-50 hover:opacity-100'
-                >{name}
-                  <div className='absolute bottom-7 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full'></div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className='flex flex-row gap-12 items-center'>
-          {
-            active ? ('') : (
-              <button className = 'hidden md:flex font-bold text-white text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-white rounded-full hover:bg-white hover:text-palette-1/[.85] transition duration-300'
-              >GET A FREE QUOTE</button>
-            )
-          }
-          <div>
-            <SideBar 
-              active={active}
-              handleClick={() => setActive(!active)}
-            />
+        <div className='flex flex-row items-center gap-12'>
+          <nav className='hidden lg:flex'>
+            <ul className='flex flex-row gap-8 xl:gap-12'>
+              {navbar.map(({ name, url }) => (
+                <li key={name} className='text-white text-[12px] sm:text-[14px] font-bold'>
+                  <a
+                    href={url}
+                    className='relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group opacity-50 hover:opacity-100'
+                  >{name}
+                    <div className='absolute bottom-7 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full'></div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className='flex flex-row gap-12 items-center'>
+            {
+              active ? ('') : (
+                <button className='hidden md:flex font-bold text-white text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-white rounded-full hover:bg-white hover:text-palette-1/[.85] transition duration-300'
+                >GET A FREE QUOTE</button>
+              )
+            }
+            <div>
+              <SideBar
+                active={active}
+                handleClick={() => setActive(!active)}
+              />
+            </div>
           </div>
         </div>
       </div>

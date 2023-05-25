@@ -1,3 +1,8 @@
+import { BsInstagram } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
+
 export const navbar = [
   {
     name: 'Home',
@@ -11,10 +16,10 @@ export const navbar = [
     name: 'Services',
     href: '#services',
   },
-  {
-    name: 'Gallery',
-    href: '#gallery',
-  },
+  // {
+  //   name: 'Gallery',
+  //   href: '#gallery',
+  // },
   {
     name: 'Blog',
     href: '#blog',
@@ -203,17 +208,22 @@ export const blog = [
 export const socials = [
   {
     name: 'instagram',
-    icon: '/icons/instagram.svg',
+    icon: BsInstagram,
     href: 'https://www.instagram.com/bythesealandscaping/',
   },
   {
     name: 'facebook',
-    icon: '/icons/facebook.svg',
+    icon: FaFacebookF,
     href: 'https://www.facebook.com/bythesealandscapes',
   },
   {
     name: 'linkedin',
-    icon: '/icons/linkedin.svg',
+    icon: FaLinkedinIn,
     href: '#',
   },
+  {
+    name: 'email',
+    icon: HiMail,
+    href: 'mailto:bythesealandscapes@gmail.com'
+  }
 ];
