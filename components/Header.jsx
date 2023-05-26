@@ -7,10 +7,14 @@ import SideBar from './SideBar';
 import { navVariants } from '../utils/motion'
 import { navbar } from '../constants';
 
-const Header = () => {
+const Header = ({setOverlay}) => {
 
   const [active, setActive] = useState(false)
-  console.log(active)
+
+  const toggleOverlay = () => {
+    setOverlay()
+    setActive(!active)
+  }
 
   return (
     <motion.nav
@@ -20,11 +24,13 @@ const Header = () => {
       className={`p-8 relative bg-palette-1/[.85] sticky top-0 z-20`}
     >
       <div className={`max-w-[1700px] mx-auto flex justify-between gap-8 h-[30px] items-center`}>
-        <img
-          src='/Logos/Logo-text-dark.png'
-          alt='logo'
-          className='h-[40px]'
-        />
+        <a href='#home'>
+          <img
+            src='/Logos/Logo-text-dark.png'
+            alt='logo'
+            className='h-[40px]'
+          />
+        </a>
         <div className='flex flex-row items-center gap-12'>
           <nav className='hidden lg:flex'>
             <ul className='flex flex-row gap-8 xl:gap-12'>
@@ -50,7 +56,7 @@ const Header = () => {
             <div>
               <SideBar
                 active={active}
-                handleClick={() => setActive(!active)}
+                handleClick={() => toggleOverlay()}
               />
             </div>
           </div>

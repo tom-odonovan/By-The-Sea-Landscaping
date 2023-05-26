@@ -9,20 +9,21 @@ import { FaPhoneAlt } from 'react-icons/fa'
 
 const SideBar = ({ active, handleClick }) => (
     <div>
-        {active && (
-            <div className='fixed inset-0 bg-[rgba(0,0,0,0.5)]' onClick={() => handleClick()}></div>
-        )}
-        <div className={`${active ? 'translate-x-0' : 'translate-x-full'} transition duration-300 ease-in-out p-8 flex flex-col fixed top-0 right-0 bg-white w-[350px] h-full shadow-2xl opacity-100 z-5`} >
+        <div className={`${active ? 'translate-x-0' : 'translate-x-full'} transition duration-300 ease-in-out p-8 flex flex-col fixed top-0 right-0 bg-white w-[350px] h-full shadow-2xl opacity-100 z-5 overflow-y-auto flex-grow`} >
             <div className='w-full flex justify-end'>
                 <button onClick={() => handleClick()}>
                     <GrClose className='relative left-[2px] -top-[3px] w-[30px] h-[30px] cursor-pointer' />
                 </button>
             </div>
-            <img
-                src='/Logos/bts-logo.jpeg'
-                alt='logo'
-                className='relative w-[200px] -top-[30px] pb-8'
-            />
+            <div className='flex justify-center'>
+                <a href='#home'>
+                    <img
+                        src='/Logos/bts-logo.jpeg'
+                        alt='logo'
+                        className='relative w-[200px] -top-[30px]'
+                    />
+                </a>
+            </div>
             <nav className=''>
                 <ul className='flex flex-col gap-8 xl:gap-12'>
                     {navbar.map(({ name, url }) => (
@@ -31,7 +32,7 @@ const SideBar = ({ active, handleClick }) => (
                                 href={url}
                                 className='relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group hover:text-black'
                             >{name}
-                                <div className='absolute bottom-7 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full'></div>
+                                <div className='absolute bottom-7 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-palette-2 transition-all duration-300 group-hover:w-full'></div>
                             </a>
                             <div className='relative top-[15px] h-[1px] w-full bg-black opacity-10' />
                         </li>
@@ -39,7 +40,7 @@ const SideBar = ({ active, handleClick }) => (
                 </ul>
             </nav>
 
-            <div className='flex flex-row pt-[80px] gap-8 items-center'>
+            <div className='flex flex-row pt-16 pb-6 gap-6 justify-center items-center'>
                 <FaPhoneAlt className='w-[30px] h-[30px] text-palette-2' />
                 <div>
                     <h4>Call Today</h4>
@@ -49,14 +50,14 @@ const SideBar = ({ active, handleClick }) => (
                 </div>
             </div>
 
-            <div className='flex gap-4 py-16 justify-center'>
+            <div className='flex gap-4 pt-4 justify-center'>
                 {socials.map(({ name, icon, href }) => {
                     const SocialIcon = icon;
 
                     return (
-                        <a href={href}>
-                            <div className={`${styles.flexCenter} w-[40px] h-[40px] rounded-full bg-palette-1 border-[1px] border-white hover:border-palette-1 cursor-pointer hover:bg-white opacity-80 transition duration-300 group`}>
-                                <SocialIcon size={20} className='text-white group-hover:text-palette-1' />
+                        <a href={href} key={name}>
+                            <div className={`${styles.flexCenter} w-[40px] h-[40px] rounded-full bg-palette-2 border-[1px] border-palette-2 hover:border-palette-2 cursor-pointer hover:bg-white opacity-80 transition duration-300 group`}>
+                                <SocialIcon size={20} className='text-white group-hover:text-palette-2' />
                             </div>
                         </a>
                     )

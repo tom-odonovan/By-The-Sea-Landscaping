@@ -27,7 +27,7 @@ const ServiceInfo = ({ active }) => (
             alt={active.alt}
             className='w-full md:w-1/3 object-cover'
         />
-        <div className={`${styles.flexCenter} px-8 absolute top-[55%] sm:top-[50%] right-[50%] md:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] translate-x-[50%] md:translate-x-0 translate-y-0 md:-translate-y-[50%] w-[250px] sm:w-[300px] h-[300px] sm:h-[350px] bg-palette-2 rounded-md text-white flex flex-col gap-5 text-center shadow-2xl z-5 transition duration-500`}>
+        <div className={`${styles.flexCenter} px-8 absolute top-[55%] sm:top-[50%] right-[50%] md:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] translate-x-[50%] md:translate-x-0 translate-y-[110px] sm:translate-y-0 md:-translate-y-[50%] w-[250px] sm:w-[300px] h-[300px] sm:h-[350px] bg-palette-2 rounded-md text-white flex flex-col gap-5 text-center shadow-2xl z-5 transition duration-500`}>
             <img
                 src='/icons/leaf-icon.svg'
                 alt='Leaf Icon'
