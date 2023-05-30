@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "eslint-config-next": "13.0.3",
+    "formik": "^2.4.0",
     "framer-motion": "^7.6.7",
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

@@ -11,8 +11,8 @@
 }
 
 input:focus ~ .input-text,
-textarea:focus~ .input-textarea {
-  @apply text-palette-2 transform -translate-y-10 -translate-x-4;
+textarea:focus ~ .input-textarea {
+  @apply  transform -translate-y-10 -translate-x-4 opacity-100;
 }
 
 .glassmorphism {
