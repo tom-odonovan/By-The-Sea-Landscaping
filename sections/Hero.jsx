@@ -21,7 +21,7 @@ const Hero = () => (
           <img
             src='/imgs/mowing-man.jpg'
             alt='cover'
-            className='absolute w-[100vw] h-[1000px] object-cover brightness-75 z-[-10]'
+            className='absolute -top-[95px] w-[100vw] h-[1000px] object-cover brightness-75 z-[-10]'
           />
 
           {/* <a href='#explore'>

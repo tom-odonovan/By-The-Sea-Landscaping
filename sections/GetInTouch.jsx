@@ -28,7 +28,7 @@ const GetInTouch = () => (
             </motion.div>
         </motion.div>
         <div className={`${styles.flexCenter} flex-row gap-12`}>
-            <ContactDetails />
+            {/* <ContactDetails /> */}
             <ContactForm />
         </div>
     </section>

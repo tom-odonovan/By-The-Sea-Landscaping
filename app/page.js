@@ -10,7 +10,6 @@ const Page = () => {
 
   const pageRef = useRef();
   const [overlay, setOverlay] = useState(false);
-  console.log(overlay)
 
   return (
     <div className="bg-hero-pattern">

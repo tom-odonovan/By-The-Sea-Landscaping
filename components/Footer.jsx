@@ -31,7 +31,7 @@ const Footer = () => (
       </div>
       <div className='h-[1px] w-full bg-white opacity-50' />
       <p className='text-white text-[12px] text-center'>
-        © By The Sea Landscaping | Website by 
+        © Copyright By The Sea Landscaping 2023 | Website by 
         <a href='mailto:tom@amcco.com.au' className='font-bold px-1 cursor-pointer'>
           Tom O'Donovan
         </a>
