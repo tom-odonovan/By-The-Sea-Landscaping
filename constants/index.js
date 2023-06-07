@@ -1,7 +1,9 @@
 import { BsInstagram } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
-import { HiMail } from 'react-icons/hi';
+import { MdEmail } from 'react-icons/md';
+import { TiLocation } from 'react-icons/ti';
+import { FaPhoneAlt } from 'react-icons/fa'
 
 export const navbar = [
   {
@@ -223,7 +225,28 @@ export const socials = [
   },
   {
     name: 'email',
-    icon: HiMail,
+    icon: MdEmail,
     href: 'mailto:bythesealandscapes@gmail.com'
+  }
+];
+
+export const contact = [
+  {
+    name: 'location',
+    icon: TiLocation,
+    content: 'Northern Beaches, Sydney',
+    url: 'https://goo.gl/maps/uWJAxEnVrjFuUeSH7'
+  },
+  {
+    name: 'email',
+    icon: MdEmail,
+    content: 'bythesealandscapes@gmail.com',
+    url: 'mailto:bythesealandscapes@gmail.com'
+  },
+  {
+    name: 'phone',
+    icon: FaPhoneAlt,
+    content: '0439 439 391',
+    url: 'tel:0439439391'
   }
 ];
