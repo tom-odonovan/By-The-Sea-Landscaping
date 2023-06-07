@@ -9,7 +9,7 @@ import ContactForm from "../components/contact/ContactForm";
 import ContactDetails from "../components/contact/ContactDetails";
 
 const GetInTouch = () => (
-    <section>
+    <section className='flex flex-col items-center'>
         <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -27,8 +27,8 @@ const GetInTouch = () => (
                 <TitleText title={<>Get In Touch</>} textStyles='text-center mb-[50px]' />
             </motion.div>
         </motion.div>
-        <div className={`${styles.flexCenter} flex-row gap-12`}>
-            {/* <ContactDetails /> */}
+        <div className={`flex w-[1200px] bg-palette-1 border-[2px] border-palette-1 flex-row shadow-2xl rounded-xl`}>
+            <ContactDetails />
             <ContactForm />
         </div>
     </section>

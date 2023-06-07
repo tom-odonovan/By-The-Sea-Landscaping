@@ -43,6 +43,7 @@ const ContactForm = () => {
                 .required('Required'),
             phone: Yup
                 .string()
+                .matches(/^[0-9]+$/, 'Must be a valid phone number')
                 .required('Required'),
             message: Yup
                 .string()
@@ -53,11 +54,11 @@ const ContactForm = () => {
     console.log(touched)
 
     return (
-        <div className={`p-20 leading-8 bg-white border-[1px] border-palette-1/20 max-w-[700px] shadow-2xl rounded-lg`}>
+        <div className={`p-20 leading-8 max-w-[700px] bg-white rounded-r-xl`}>
             <ToastContainer position="bottom-left" theme="colored" />
 
-            <h3 className='text-[26px] mb-6 pb-6 font-sans font-light text-palette-2 border-b-[1px] border-palette-1/30'>We'd love to hear from you!</h3>
-            <p>
+            <h3 className='text-[32px] mb-6 pb-6 font-sans font-light text-palette-1 border-b-[1px] border-palette-1/30'>We'd love to hear from you!</h3>
+            <p className='text-palette-1'>
                 Whether you have questions, inquiries, or simply want to chat about your landscaping needs, we're here to help. Just fill out the form below, and we'll get back to you as soon as possible. We can't wait to bring your outdoor dreams to life!
             </p>
 
@@ -122,7 +123,7 @@ const ContactForm = () => {
                             touched={touched.message}
                         />
                     </div>
-                    <button type='submit' className={`${styles.flexCenter} flex-row gap-2 font-sans bg-palette-2 border-[2px] border-palette-2 text-white text-lg rounded-lg mt-6 px-8 h-[60px] py-4 w-full transition duration-300 ${!isValid || isSubmitting ? 'cursor-default' : 'hover:bg-white hover:text-palette-2 active:scale-95'}`}>
+                    <button type='submit' className={`${styles.flexCenter} flex-row gap-2 font-sans bg-palette-2 border-[3px] border-palette-2 text-white text-lg rounded-lg mt-6 px-8 h-[60px] py-4 w-full transition duration-300 ${!isValid || isSubmitting ? 'cursor-default' : 'hover:bg-white hover:text-palette-2 active:scale-95'}`}>
                         { isSubmitting ? (
                             <svg width="35" height="35" stroke="#C8E4D6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g>
