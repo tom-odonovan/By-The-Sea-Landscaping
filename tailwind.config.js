@@ -27,9 +27,12 @@ module.exports = {
       fontFamily: {
         sans: ['Montserrat', 'Arial', 'sans-serif'],
         roboto: ['Roboto', 'Arial', 'sans-serif'],
+        lato: ['Lato', 'Arial', 'sans-serif'],
+        abril: ['Abril Fatface', 'Arial', 'cursive'],
       },
      backgroundImage: {
         'hero-pattern': "url('/hero-pattern-5.png')",
+        'contact': "url('/imgs/contact-bg.jpg')",
       },
     },
     borderWidth: {
