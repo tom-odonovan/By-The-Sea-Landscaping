@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { TypingText } from '../components';
+import { TypingText, TitleText } from '../components';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion'
 
@@ -15,6 +15,7 @@ const About = () => (
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <TypingText title='| About Us' textStyles='text-center' />
+      <TitleText title={<>Who We Are</>} />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}

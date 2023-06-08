@@ -14,8 +14,8 @@ const ContactDetails = () => {
                     const ContactIcon = icon;
 
                     return (
-                        <a href={url} className='cursor-pointer group'>
-                            <div key={name} className='flex flex-row items-center'>
+                        <a key={name} href={url} className='cursor-pointer group'>
+                            <div className='flex flex-row items-center'>
                                 <div className='border-[1px] border-palette-2 bg-palette-2 rounded-full p-2 mr-6  group-hover:border-white group-hover:bg-white transition duration-300'>
                                     <ContactIcon size={30} className='text-palette-1 group-hover:text-palette-2 text-center w-[30px]' />
                                 </div>

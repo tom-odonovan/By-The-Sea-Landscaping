@@ -15,19 +15,12 @@ const GetInTouch = () => (
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className={`mx-auto flex lg:flex-col flex-col gap-[50px] items-center`}
+            className={`mx-auto flex lg:flex-col flex-col items-center`}
         >
-
-            <motion.div
-                variants={fadeIn('right', 'tween', 0.2, 1)}
-                className={`${styles.innerWidth} ${styles.xPaddings} mx-auto flex-[0.75] flex justify-center flex-col`}
-
-            >
-                <TypingText title='| Contact' textStyles='text-center' />
-                <TitleText title={<>Get In Touch</>} textStyles='text-center mb-[50px]' />
-            </motion.div>
+            <TypingText title='| Contact' textStyles='text-center' />
+            <TitleText title={<>Get In Touch</>} textStyles='text-center mb-[50px]' />
         </motion.div>
-        <div className={`flex w-[1200px] bg-palette-1 border-[2px] border-palette-1 flex-row shadow-2xl rounded-xl`}>
+        <div className={`flex w-[1200px] bg-palette-1 border-[2px] border-palette-1 flex-row shadow-xl rounded-2xl`}>
             <ContactDetails />
             <ContactForm />
         </div>

@@ -47,12 +47,10 @@ const Header = ({setOverlay}) => {
             </ul>
           </nav>
           <div className='flex flex-row gap-12 items-center'>
-            {
-              active ? ('') : (
-                <button className='hidden md:flex font-bold text-white text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-white rounded-full hover:bg-white hover:text-palette-1/[.85] transition duration-300'
-                >GET A FREE QUOTE</button>
-              )
-            }
+            
+            <button className='hidden md:flex font-bold text-white text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-white rounded-full hover:bg-white hover:text-palette-1/[.85] transition duration-300'
+            >GET A FREE QUOTE</button>
+            
             <div>
               <SideBar
                 active={active}

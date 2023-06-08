@@ -70,7 +70,7 @@ const SideBar = ({ active, handleClick }) => (
             <img
                 src='/icons/menu.svg'
                 alt='menu'
-                className='lg:hidden w-[30px] h-[30px] object-contain cursor-pointer'
+                className='2xl:hidden w-[30px] h-[30px] object-contain cursor-pointer'
             />
         </button>
 
