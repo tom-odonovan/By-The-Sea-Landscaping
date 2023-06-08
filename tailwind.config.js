@@ -32,7 +32,9 @@ module.exports = {
       },
      backgroundImage: {
         'hero-pattern': "url('/hero-pattern-5.png')",
-        'contact': "url('/imgs/contact-bg.jpg')",
+        'hero-cover': "url('/imgs/mowing-man.jpg')",
+        'about': "url('/imgs/about-bg.jpg')",
+        'contact': "url('/imgs/hedge-trimming-2.jpg')",
       },
     },
     borderWidth: {
