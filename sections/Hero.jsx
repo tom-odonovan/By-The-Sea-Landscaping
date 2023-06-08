@@ -11,7 +11,7 @@ const Hero = () => (
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className={`${styles.innerWidth} w-full flex flex-col`}
     >
       <motion.div
         variants={fadeIn('down', 'tween', 0.2, 1)}
@@ -37,13 +37,22 @@ const Hero = () => (
 
       </motion.div>
 
-      <div className='absolute top-[150px] flex justify-left items-left flex-col relative z-10'>
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          By The Sea
-        </motion.h1>
-        <motion.h1 variants={textVariant(1.3)} className={styles.heroHeading}>
-          Landscaping
-        </motion.h1>
+      <div className='absolute top-[250px] flex justify-left items-left flex-col gap-10 relative z-10'>
+        <div>
+          <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+            Transform Your
+          </motion.h1>
+          <motion.h1 variants={textVariant(1.4)} className={styles.heroHeading}>
+            Outdoor Space.
+          </motion.h1>
+        </div>
+        <motion.p variants={textVariant(1.7)} className={styles.heroText}>
+          Quality landscaping solutions that bring life and inspiration to your garden.
+        </motion.p>
+        <div className='flex flex-row gap-6'>
+          <motion.button variants={textVariant(2)} className={styles.heroBtn}>Learn More</motion.button>
+          <motion.button variants={textVariant(2.3)} className={styles.heroBtn}>Contact Us</motion.button>
+        </div>
       </div>
 
     </motion.div>
