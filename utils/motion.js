@@ -37,12 +37,15 @@ export const slideIn = (direction, type, delay, duration) => ({
 });
 
 export const staggerContainer = (staggerChildren, delayChildren) => ({
-  hidden: {},
+  hidden: {
+    opacity: 0,
+  },
   show: {
     transition: {
       staggerChildren,
       delayChildren,
     },
+    opacity: 1,
   },
 });
 
@@ -101,7 +104,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
       type,
       delay,
       duration,
-      ease: 'easeOut',
+      ease: 'easeInOut',
     },
   },
 });

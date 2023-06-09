@@ -11,7 +11,7 @@ import { guarantee } from '../constants';
 export const WhyChooseUs = () => {
 
   return (
-    <section className={`${styles.paddings}  relative z-10`}>
+    <section className={`${styles.paddings} relative z-10 bg-palette-4 min-h-[70vh] flex flex-col justify-center`} id='guarantee'>
       <motion.div
         variants={staggerContainer}
         initial="hidden"

@@ -12,7 +12,7 @@ import { BiArrowBack } from 'react-icons/bi';
 
 const ContactForm = () => {
 
-    const [submitted, setSubmitted] = useState(true);
+    const [submitted, setSubmitted] = useState(false);
 
     const { values, errors, touched, status, isSubmitting, isValid, handleBlur, handleChange, handleSubmit } = useFormik({
         initialValues: {
@@ -56,7 +56,7 @@ const ContactForm = () => {
 
 
     return (
-        <div className={`relative flex flex-col p-20 leading-8 max-w-[700px] bg-white rounded-r-xl`}>
+        <div className={`relative flex flex-col p-20 leading-8 max-w-[700px] bg-white  rounded-r-xl`}>
             {submitted ? (
 
                 // Display message confirmation on submit
@@ -152,7 +152,7 @@ const ContactForm = () => {
                                     touched={touched.message}
                                 />
                             </div>
-                            <button type='submit' className={`${styles.flexCenter} flex-row gap-2 font-sans bg-palette-2 border-[3px] border-palette-2 text-white text-lg rounded-lg mt-6 px-8 h-[60px] py-4 w-full transition duration-300 ${!isValid || isSubmitting ? 'cursor-default' : 'hover:bg-white hover:text-palette-2 active:scale-95'}`}>
+                            <button type='submit' className={`${styles.flexCenter} flex-row gap-2 font-sans bg-palette-2 border-[3px] border-palette-2 text-white text-lg rounded-lg mt-6 px-8 h-[60px] py-4 w-full transition duration-300 ${!isValid || isSubmitting ? 'cursor-default opacity-50' : 'opacity-100 hover:bg-white hover:text-palette-2 active:scale-95'}`}>
                                 { isSubmitting ? (
                                     <svg width="35" height="35" stroke="#C8E4D6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <g>

@@ -6,6 +6,7 @@ import styles from '../styles';
 import SideBar from './SideBar';
 import { navVariants } from '../utils/motion'
 import { navbar } from '../constants';
+import { Link } from 'react-scroll';
 
 const Header = ({setOverlay}) => {
 
@@ -34,22 +35,38 @@ const Header = ({setOverlay}) => {
         <div className='flex flex-row items-center gap-12'>
           <nav className='hidden lg:flex'>
             <ul className='flex flex-row gap-8 xl:gap-12'>
-              {navbar.map(({ name, url }) => (
+              {navbar.map(({ name, path }) => (
                 <li key={name} className='text-white text-[12px] sm:text-[14px] font-bold'>
-                  <a
-                    href={url}
+                  <Link
+                    activeClass='active'
+                    to={path}
+                    spy={true}
+                    smooth={true}
+                    offset={-150}
+                    duration={300}
+                    key={name}
                     className='relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group opacity-50 hover:opacity-100'
-                  >{name}
+                  >
+                    {name}
                     <div className='absolute bottom-7 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full'></div>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </nav>
           <div className='flex flex-row gap-12 items-center'>
             
-            <button className='hidden md:flex font-bold text-palette-5 text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-palette-5 rounded-full hover:bg-palette-5 hover:text-palette-1/[.85] transition duration-300'
-            >GET A FREE QUOTE</button>
+            <Link
+              activeClass='active'
+              to='contact'
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={300}
+            >
+              <button className='hidden md:flex font-bold text-palette-5 text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-palette-5 rounded-full hover:bg-palette-5 hover:text-palette-1/[.85] transition duration-300'
+              >GET A FREE QUOTE</button>
+            </Link>
             
             <div>
               <SideBar

@@ -3,9 +3,11 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
+import { Link } from 'react-scroll';
+import { heroBtns } from '../constants';
 
 const Hero = () => (
-  <section className={`sm:pl-16 pl-6 w-screen`}>
+  <section className={`sm:pl-16 pl-6 w-screen`} id='home'>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
@@ -30,10 +32,21 @@ const Hero = () => (
         <motion.p variants={textVariant(1.7)} className={styles.heroText}>
           Quality landscaping solutions that bring life and inspiration to your garden.
         </motion.p>
-        <div className='flex flex-row gap-6'>
-          <motion.button variants={textVariant(1)} className={styles.heroBtn}>Learn More</motion.button>
-          <motion.button variants={textVariant(1.2)} className={styles.heroBtn}>Contact Us</motion.button>
-        </div>
+        <motion.div variants={textVariant(2)} className='flex flex-row gap-6'>
+          {heroBtns.map(({name, path}, i) => (
+            <Link
+              activeClass='active'
+              to={path}
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={300}
+              key={name}
+            >
+              <button className={styles.heroBtn}>{name}</button>
+            </Link>
+          ))}
+        </motion.div>
       </div>
 
     </motion.div>

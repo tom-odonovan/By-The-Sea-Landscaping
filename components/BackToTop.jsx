@@ -67,7 +67,7 @@ const BackToTop = ({ pageRef }) => {
                         />
                     </svg>
 
-                    <div className="absolute bottom-0 right-0 w-full h-full rounded-full border-3 border-opacity-50 z-[-1] flex items-center justify-center">
+                    <div className="absolute bottom-0 right-0 w-full h-full rounded-full border-3 shadow-lg z-[-1] flex items-center justify-center">
                         <BsArrowUp size={29} color='#3CAB80' />
                     </div>
                 </motion.button>

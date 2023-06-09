@@ -8,27 +8,38 @@ import { FaPhoneAlt } from 'react-icons/fa'
 export const navbar = [
   {
     name: 'Home',
-    href: '#home',
+    path: 'home',
   },
   {
     name: 'About',
-    href: '#About',
+    path: 'about',
   },
   {
     name: 'Services',
-    href: '#services',
+    path: 'services',
   },
   // {
   //   name: 'Gallery',
-  //   href: '#gallery',
+  //   path: 'gallery',
   // },
   {
     name: 'Blog',
-    href: '#blog',
+    path: 'blog',
   },
   {
     name: 'Contact',
-    href: '#contact',
+    path: 'contact',
+  },
+]
+
+export const heroBtns = [
+  {
+    name: 'Learn More',
+    path: 'about',
+  },
+  {
+    name: 'Contact Us',
+    path: 'contact',
   },
 ]
 

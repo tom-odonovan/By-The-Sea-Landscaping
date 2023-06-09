@@ -7,7 +7,7 @@ import { footerVariants } from '../utils/motion';
 
 
 const Footer = () => (
-  <footer className={`p-8 mt-[100px] relative bg-palette-1 z-5 opacity-90`} >
+  <footer className={`p-8 relative bg-palette-1 z-5 opacity-90`} >
     <motion.div 
       variants={footerVariants}
       initial='hidden'

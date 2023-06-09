@@ -6,6 +6,7 @@ import { fadeIn } from '../utils/motion'
 import { navbar, socials } from '../constants';
 import { GrClose } from 'react-icons/gr'
 import { FaPhoneAlt } from 'react-icons/fa'
+import { Link } from 'react-scroll';
 
 const SideBar = ({ active, handleClick }) => (
     <div>
@@ -26,14 +27,22 @@ const SideBar = ({ active, handleClick }) => (
             </div>
             <nav className=''>
                 <ul className='flex flex-col gap-8 xl:gap-12'>
-                    {navbar.map(({ name, url }) => (
+                    {navbar.map(({ name, path }) => (
                         <li key={name} className='text-[12px] sm:text-[14px] font-bold'>
-                            <a
-                                href={url}
+                            <Link
+                                onClick={() => handleClick()}
+                                activeClass='active'
+                                to={path}
+                                spy={true}
+                                smooth={true}
+                                offset={-150}
+                                duration={300}
+                                key={name}
                                 className='relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group hover:text-black'
-                            >{name}
+                            >
+                                {name}
                                 <div className='absolute bottom-7 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-palette-2 transition-all duration-300 group-hover:w-full'></div>
-                            </a>
+                            </Link>
                             <div className='relative top-[15px] h-[1px] w-full bg-black opacity-10' />
                         </li>
                     ))}
