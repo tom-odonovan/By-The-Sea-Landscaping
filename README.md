@@ -2,7 +2,7 @@
 # By The Sea Landscaping
 
 </br>
-<img height='550' src="./public/imgs/cover-sc.png" alt="Website screenshot" /> 
+<img height='auto' width='100%' src="./public/imgs/cover-sc-2.png" alt="Website screenshot" /> 
 </br>
 
 This repository contains the code for a small landscaping business website built using React, Next.js, Tailwind, and Framer Motion. The website aims to showcase the services offered by the landscaping business and provide information to potential clients.
@@ -15,11 +15,19 @@ This repository contains the code for a small landscaping business website built
 
 - **Contact Form:** A contact form is provided to allow visitors to get in touch with the landscaping business directly. The form includes fields for name, email, subject, and message, enhancing communication with potential clients.
 
+- **Email Integration:** The contact form integrates with [Nodemailer](https://nodemailer.com/about/) and sends an email to the business when a user submits the form. The email includes the submitted data, such as the name, email, location, phone, and message.
+
+- **Form Validation:** The contact form employs [Yup](https://www.npmjs.com/package/yup) for form validation. It ensures that the required fields are filled out correctly, such as validating the email format and phone number format.
+
+- **Animated Transitions:** The website utilizes [Framer Motion](https://www.framer.com/motion/), a popular animation library for React, to add smooth and engaging animations to various elements, enhancing the overall user experience.
+
 - **Navigation and Footer:** The website includes a navigation bar for easy navigation between sections and a footer section containing relevant links and information.
 
 - **Back to Top Button:** A "Back to Top" button is provided to allow users to quickly navigate back to the top of the page, enhancing the user experience.
 
 ## Technologies Used
+
+### Front-End
 
 - **React:** A JavaScript library for building user interfaces, used as the foundation of the website.
 
@@ -28,6 +36,18 @@ This repository contains the code for a small landscaping business website built
 - **Tailwind CSS:** A utility-first CSS framework used for styling the website. It provides a responsive and customizable design system.
 
 - **Framer Motion:** A popular animation library for React, used to add smooth and engaging animations to various elements of the website.
+
+- **Formik:** A form library for React that helps with form handling, validation, and error display.
+
+- **Yup:** A JavaScript schema validation library used for defining and validating the shape of data.
+
+### Back-End
+
+- **Express:** A minimalist web application framework for Node.js used to handle the API route for the contact form submission.
+
+- **Nodemailer:** A module for Node.js applications that allows sending emails using SMTP or sendmail transport.
+
+
 
 ## Feedback 
 
@@ -40,6 +60,10 @@ Feedback and suggestions for this project is welcome. If you find any issues or 
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
+- [Formik](https://formik.org/)
+- [Yup](https://www.npmjs.com/package/yup)
+- [Express](https://expressjs.com/)
+- [Nodemailer](https://nodemailer.com/about/)
 
 ## Getting Started
 
