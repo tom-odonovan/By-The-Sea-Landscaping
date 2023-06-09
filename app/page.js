@@ -23,7 +23,7 @@ const Page = () => {
         <Services />
         <WhyChooseUs />
         <Explore />
-        <Blog />
+        {/* <Blog /> */}x
         <Feedback />
         <GetInTouch />
         <FollowUs />

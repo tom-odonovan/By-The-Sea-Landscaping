@@ -48,7 +48,7 @@ const Header = ({setOverlay}) => {
           </nav>
           <div className='flex flex-row gap-12 items-center'>
             
-            <button className='hidden md:flex font-bold text-white text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-white rounded-full hover:bg-white hover:text-palette-1/[.85] transition duration-300'
+            <button className='hidden md:flex font-bold text-palette-5 text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-palette-5 rounded-full hover:bg-palette-5 hover:text-palette-1/[.85] transition duration-300'
             >GET A FREE QUOTE</button>
             
             <div>
