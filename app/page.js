@@ -26,8 +26,8 @@ const Page = () => {
         {/* <Blog /> */}x
         <Feedback />
         <GetInTouch />
-        <FollowUs />
-        <BackToTop pageRef={pageRef} />
+        {/* <FollowUs /> */}
+        {/* <BackToTop pageRef={pageRef} /> */}
         <Footer />
       </div>
     </div>

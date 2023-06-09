@@ -2,7 +2,9 @@
 # By The Sea Landscaping
 
 </br>
-<img height='auto' width='100%' src="./public/imgs/cover-sc-2.png" alt="Website screenshot" /> 
+<img height='auto' width='100%' src="./public/imgs/cover-sc-2.png" alt="Website cover screenshot" /> 
+<img height='auto' width='100%' src="./public/imgs/services-sc.png" alt="Services section screenshot" /> 
+<img height='auto' width='100%' src="./public/imgs/contact-sc.png" alt="Contact form screenshot" /> 
 </br>
 
 This repository contains the code for a small landscaping business website built using React, Next.js, Tailwind, and Framer Motion. The website aims to showcase the services offered by the landscaping business and provide information to potential clients.
