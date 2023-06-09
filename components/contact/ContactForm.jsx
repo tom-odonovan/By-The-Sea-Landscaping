@@ -9,12 +9,13 @@ import { sendContactForm } from '../../lib/api';
 import { MdError } from 'react-icons/md';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import { BiArrowBack } from 'react-icons/bi';
+import { scroller } from 'react-scroll';
 
 const ContactForm = () => {
 
     const [submitted, setSubmitted] = useState(false);
 
-    const { values, errors, touched, status, isSubmitting, isValid, handleBlur, handleChange, handleSubmit } = useFormik({
+    const { values, errors, touched, status, isSubmitting, isValid, handleChange, handleSubmit } = useFormik({
         initialValues: {
             name: '',
             email: '',
@@ -54,9 +55,27 @@ const ContactForm = () => {
         })
     })
 
+    const [formFocused, setFormFocused] = useState(false);
+
+    // Position form at center of viewport when in focus using react-scroll
+    const handleFocus = () => {
+        setFormFocused(true);
+        console.log('focused')
+
+        scroller.scrollTo('contact', {
+            duration: 100,
+            smooth: true,
+            offset: 100,
+        });
+    };
+
+    const handleBlur = () => {
+        setFormFocused(false);
+    };
+
 
     return (
-        <div className={`relative flex flex-col p-20 leading-8 max-w-[700px] bg-white  rounded-r-xl`}>
+        <div className={`relative flex flex-col p-20 leading-8 max-w-[700px] bg-white rounded-r-xl`}>
             {submitted ? (
 
                 // Display message confirmation on submit
@@ -98,7 +117,12 @@ const ContactForm = () => {
                     </div>
                 
 
-                    <form method='POST' onSubmit={handleSubmit}>
+                    <form 
+                        method='POST' 
+                        onSubmit={handleSubmit}
+                        onFocus={handleFocus}
+                        onBlur={handleBlur}
+                    >
                         <div>
                             <div className={`${isSubmitting && 'opacity-30'} flex flex-row flex-wrap pt-12 gap-6 gap-y-10 transition duration-300`}>
                                 <FormInput
