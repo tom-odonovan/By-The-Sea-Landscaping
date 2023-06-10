@@ -60,7 +60,7 @@ const BackToTop = ({ pageRef }) => {
                             cx={diameter / 2}
                             cy={diameter / 2}
                             r={radius}
-                            stroke="#3CAB80"
+                            stroke="#90C8AC"
                             strokeWidth={`${strokeWidth}px`}
                             fill="transparent"
                             style={{ strokeDasharray: circumference, strokeDashoffset: circumference * position }}
@@ -68,7 +68,7 @@ const BackToTop = ({ pageRef }) => {
                     </svg>
 
                     <div className="absolute bottom-0 right-0 w-full h-full rounded-full border-3 shadow-lg z-[-1] flex items-center justify-center">
-                        <BsArrowUp size={29} color='#3CAB80' />
+                        <BsArrowUp size={29} color='#90C8AC' />
                     </div>
                 </motion.button>
             )}

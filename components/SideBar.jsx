@@ -35,7 +35,7 @@ const SideBar = ({ active, handleClick }) => (
                                 to={path}
                                 spy={true}
                                 smooth={true}
-                                offset={-150}
+                                offset={path === 'contact' ? 0 : -150}
                                 duration={300}
                                 key={name}
                                 className='relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group hover:text-black'

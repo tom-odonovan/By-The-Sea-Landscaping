@@ -25,13 +25,20 @@ const Header = ({setOverlay}) => {
       className={`p-8 relative bg-palette-1/[.85] sticky top-0 z-20 shadow-2xl`}
     >
       <div className={`max-w-[1700px] mx-auto flex justify-between gap-8 h-[30px] items-center`}>
-        <a href='#home'>
+        <Link
+          activeClass='active'
+          to='home'
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={300}
+        >
           <img
             src='/Logos/Logo-text-dark.png'
             alt='logo'
-            className='h-[40px]'
+            className='h-[40px] cursor-pointer'
           />
-        </a>
+        </Link>
         <div className='flex flex-row items-center gap-12'>
           <nav className='hidden lg:flex'>
             <ul className='flex flex-row gap-8 xl:gap-12'>
@@ -42,7 +49,7 @@ const Header = ({setOverlay}) => {
                     to={path}
                     spy={true}
                     smooth={true}
-                    offset={-150}
+                    offset={path === 'contact' ? 0 : -150}
                     duration={300}
                     key={name}
                     className='relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group opacity-50 hover:opacity-100'
@@ -61,7 +68,7 @@ const Header = ({setOverlay}) => {
               to='contact'
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={0}
               duration={300}
             >
               <button className='hidden md:flex font-bold text-palette-5 text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-palette-5 rounded-full hover:bg-palette-5 hover:text-palette-1/[.85] transition duration-300'
