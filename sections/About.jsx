@@ -17,7 +17,7 @@ const About = () => (
       <TypingText title='| About Us' textStyles='text-center' />
       <TitleText title={<>Who We Are</>} />
 
-      <div className='flex flex-col lg:flex-row gap-8 lg:gap-20 mt-[50px]'>
+      <div className='flex flex-col-reverse lg:flex-row gap-8 lg:gap-20 mt-[50px]'>
         <motion.div
           variants={fadeIn('up', 'tween', 0.1, 1)}
         >
@@ -51,7 +51,7 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.3, 1)}
         src='/icons/arrow-down.svg'
         alt='arrow-down'
-        className='w-[18px] h-[28px] object-contain mt-[50px]'
+        className='hidden lg:flex w-[18px] h-[28px] object-contain mt-[50px]'
       />
     </motion.div>
   </section>
