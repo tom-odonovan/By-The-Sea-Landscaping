@@ -17,7 +17,7 @@ const Footer = () => (
       className={`max-w-[1700px] mx-auto flex flex-col gap-8 items-center justify-between`}>
       
       <div className='flex flex-row flex-wrap py-[100px] gap-[50px]'>
-        <div className='flex flex-row items-center pr-[30px]'>
+        <div className='flex flex-row items-center pb-12 pr-[30px]'>
           <img
             src='/Logos/Logo-dark.png'
             alt='logo'
@@ -119,7 +119,7 @@ const Footer = () => (
 
       </div>
 
-      <div className='h-[1px] w-full bg-white opacity-50' />
+      <div className='h-[1px] w-full bg-palette-3 opacity-50' />
 
       <p className='text-white text-[14px] text-center'>
         © Copyright By The Sea Landscaping 2023 | Website by 

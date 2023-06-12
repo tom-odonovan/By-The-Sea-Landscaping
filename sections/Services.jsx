@@ -20,7 +20,7 @@ const Services = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`mx-auto flex lg:flex-col flex-col gap-[50px]`}
+        className={`mx-auto flex lg:flex-col flex-col gap-4 xl:gap-[50px]`}
       >
         
         <motion.div
@@ -32,7 +32,7 @@ const Services = () => {
           <TitleText title={<>What We Offer</>} />
         </motion.div>
 
-        <div className={`${styles.flexCenter} flex flex-row gap-4 flex-wrap w-full md:w-[600px] min-[1100px]:w-[1200px] mx-auto z-10`}>
+        <div className={`${styles.flexCenter} flex flex-row gap-3 sm:gap-4 flex-wrap w-full md:w-[600px] min-[1100px]:w-[1200px] mx-auto z-10`}>
           {services.map((item, index) => (
             <ServicesCard 
               key={index}

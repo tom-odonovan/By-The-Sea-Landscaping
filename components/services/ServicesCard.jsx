@@ -12,7 +12,7 @@ const ServicesCard = ({ index, service, active, handleClick }) => (
         variants={fadeIn('right', 'spring', index * 0.5, 1)}
     >
 
-        <div onClick={() => handleClick(service)} className={`${styles.flexCenter} flex flex-col gap-5 cursor-pointer ${active === service ? 'bg-palette-1' : 'bg-white'} drop-shadow-xl w-full mx-8 sm:w-[250px] sm:mx-0 h-[200px] font-bold text-[18px] ${active === service ? 'text-white' : 'text-grey-900'} transition duration-300`}>
+        <div onClick={() => handleClick(service)} className={`${styles.flexCenter} flex flex-col gap-5 cursor-pointer rounded-md ${active === service ? 'bg-palette-1' : 'bg-white'} drop-shadow-xl w-[95vw] sm:w-[250px] sm:mx-0 h-[200px] font-bold text-[18px] ${active === service ? 'text-white' : 'text-grey-900'} transition duration-300`}>
             <img
                 src={service.icon.img}
                 alt={service.icon.alt}

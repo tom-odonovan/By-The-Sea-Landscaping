@@ -39,7 +39,7 @@ const Hero = () => (
               to={path}
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={path === 'contact' ? 0 : -150}
               duration={300}
               key={name}
             >

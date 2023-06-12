@@ -17,13 +17,20 @@ const SideBar = ({ active, handleClick }) => (
                 </button>
             </div>
             <div className='flex justify-center'>
-                <a href='#home'>
+                <Link
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-150}
+                    duration={300}
+                >
                     <img
-                        src='/Logos/bts-logo.jpeg'
+                        src='/Logos/Logo-light.png'
                         alt='logo'
-                        className='relative w-[200px] -top-[30px]'
+                        className='relative w-[200px] -top-[20px] mt-8 mb-12 cursor-pointer'
                     />
-                </a>
+                </Link>
             </div>
             <nav className=''>
                 <ul className='flex flex-col gap-8 xl:gap-12'>
@@ -65,7 +72,7 @@ const SideBar = ({ active, handleClick }) => (
 
                     return (
                         <a href={href} key={name}>
-                            <div className={`${styles.flexCenter} w-[40px] h-[40px] rounded-full bg-palette-2 border-[1px] border-palette-2 hover:border-palette-2 cursor-pointer hover:bg-white opacity-80 transition duration-300 group`}>
+                            <div className={`${styles.flexCenter} w-[40px] h-[40px] rounded-full bg-palette-2 border-[1px] border-palette-2 hover:border-palette-2 cursor-pointer hover:bg-white transition duration-300 group`}>
                                 <SocialIcon size={20} className='text-white group-hover:text-palette-2' />
                             </div>
                         </a>
