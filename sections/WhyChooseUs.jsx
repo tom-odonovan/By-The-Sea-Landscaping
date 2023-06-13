@@ -11,13 +11,13 @@ import { guarantee } from '../constants';
 export const WhyChooseUs = () => {
 
   return (
-    <section className={`px-0 xl:px-[100px] relative z-10 bg-palette-4 flex flex-col justify-center items-center py-[100px]`} id='guarantee'>
+    <section className={`px-0 xl:px-[100px] relative z-10 bg-palette-4 flex flex-col justify-center items-center lg:py-[100px]`} id='guarantee'>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} flex flex-col-reverse lg:flex-row lg:h-[900px]  justify-center items-center bg-white bg-hero-pattern xl:rounded-lg`}
+        className={`${styles.innerWidth} flex flex-col-reverse lg:flex-row lg:h-[900px]  justify-center items-center bg-white xl:rounded-lg`}
       >
 
         <motion.div
@@ -34,7 +34,7 @@ export const WhyChooseUs = () => {
 
         <motion.div
           variants={fadeIn('left', 'tween', 0.2, 1)}
-          className={`flex flex-col justify-center items-center lg:items-start py-[50px] px-8 md:p-[100px] xl:py-[150px]`}
+          className={`flex flex-col justify-center items-center lg:items-start py-[50px] px-12 md:p-[100px] xl:py-[150px]`}
 
         >
           <TypingText title='| Our Guarantee' />

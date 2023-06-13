@@ -49,7 +49,7 @@ const Header = ({setOverlay}) => {
                     to={path}
                     spy={true}
                     smooth={true}
-                    offset={path === 'contact' ? 0 : -150}
+                    offset={path === 'home' ? -100 : 0}
                     duration={300}
                     key={name}
                     className='relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group opacity-50 hover:opacity-100'
