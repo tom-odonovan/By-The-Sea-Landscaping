@@ -1,11 +1,18 @@
 >Freelance Website Build
 # By The Sea Landscaping
 
-</br>
-<img height='auto' width='100%' src="./public/imgs/cover-sc-2.png" alt="Website cover screenshot" /> 
-<img height='auto' width='100%' src="./public/imgs/services-sc.png" alt="Services section screenshot" /> 
-<img height='auto' width='100%' src="./public/imgs/contact-sc.png" alt="Contact form screenshot" /> 
-</br>
+
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    </br>
+    <img height='auto' width='100%' src="./public/screenshots/hero-sc.png" alt="Website cover screenshot" /> 
+    <img height='auto' width='100%' src="./public/screenshots/about-sc.png" alt="About section screenshot" /> 
+    <img height='auto' width='100%' src="./public/screenshots/services-sc-2.png" alt="Services section screenshot" /> 
+    <img height='auto' width='100%' src="./public/screenshots/guarantee-sc.png" alt="Why choose us form screenshot" /> 
+    <img height='auto' width='100%' src="./public/screenshots/explore-sc.png" alt="Explore section screenshot" /> 
+    <img height='auto' width='100%' src="./public/screenshots/contact-sc-2.png" alt="Contact form screenshot" /> 
+    <img height='auto' width='100%' src="./public/screenshots/footer-sc.png" alt="Footer screenshot" /> 
+    </br>
+</div>
 
 This repository contains the code for a small landscaping business website built using React, Next.js, Tailwind, and Framer Motion. The website aims to showcase the services offered by the landscaping business and provide information to potential clients.
 
