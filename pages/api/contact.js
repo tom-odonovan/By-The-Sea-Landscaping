@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import { mailOptions, transporter } from "../../config/nodemailer";
+import { mailOptions, transporter } from '../../config/nodemailer';
 
 const CONTACT_MESSAGE_LABELS = {
   name: 'Name',
@@ -8,18 +8,22 @@ const CONTACT_MESSAGE_LABELS = {
   suburb: 'Location',
   phone: 'Phone',
   message: 'Message',
-}
+};
 
 const generateEmailContent = (data) => {
   const stringData = Object.entries(data).reduce(
-    (str, [key, value]) => 
-      (str += `${CONTACT_MESSAGE_LABELS[key]}: \n${value}\n\n`),
+    (str, [key, value]) => {
+      (str += `${CONTACT_MESSAGE_LABELS[key]}: \n${value}\n\n`);
+      return str;
+    },
     ''
   );
 
   const htmlData = Object.entries(data).reduce(
-    (str, [key, value]) =>
-      (str += `<h1 class='field-label' align='left'>${CONTACT_MESSAGE_LABELS[key]}</h1><p class='email-content' align='left'>${value}</p>`),
+    (str, [key, value]) => {
+      (str += `<h1 class='field-label' align='left'>${CONTACT_MESSAGE_LABELS[key]}</h1><p class='email-content' align='left'>${value}</p>`);
+      return str;
+    },
     ''
   );
 
