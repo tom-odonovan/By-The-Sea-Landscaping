@@ -75,7 +75,7 @@ const ContactForm = () => {
 
 
     return (
-        <div className={`relative flex flex-col p-20 leading-8 max-w-[700px] bg-white rounded-r-xl`}>
+        <div className={`relative flex flex-col px-8 py-20 sm:px-20 lg:px-12 xl:px-20 leading-8 max-w-[700px] bg-white`}>
             {submitted ? (
 
                 // Display message confirmation on submit
@@ -85,7 +85,7 @@ const ContactForm = () => {
                         Thank You!
                     </h3>
                     <div className='flex flex-col gap-8 items-center'>
-                        <div className='flex flex-row gap-4 mb-0 p-4 text-green-500 justify-center items-center text-[24px] font-light'>
+                        <div className='flex flex-row gap-4 mb-0 p-4 text-palette-2 justify-center items-center text-[24px] font-light'>
                             <AiFillCheckCircle size={50} />
                             <p>Your message has been sent.</p>
                         </div>
@@ -105,7 +105,7 @@ const ContactForm = () => {
                 // Display contact form
 
                 <div>
-                    <h3 className='text-[32px] mb-6 pb-6 font-sans font-light text-palette-1 border-b-[1px] border-palette-1/30'>We'd love to hear from you!</h3>
+                    <h3 className='text-[24px] sm:text-[32px] lg:text-[28px] mb-6 pb-6 font-sans font-light text-palette-1 border-b-[1px] border-palette-1/30'>We'd love to hear from you!</h3>
                     <p className='text-palette-1'>
                         Whether you have questions, inquiries, or simply want to chat about your landscaping needs, we're here to help. Just fill out the form below, and we'll get back to you as soon as possible. We can't wait to bring your outdoor dreams to life!
                     </p>

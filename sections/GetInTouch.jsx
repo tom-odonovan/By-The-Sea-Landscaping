@@ -20,7 +20,7 @@ const GetInTouch = () => (
             <TypingText title='| Contact' textStyles='text-center' />
             <TitleText title={<>Get In Touch</>} textStyles='text-center mb-[50px]' />
         </motion.div>
-        <div className={`flex w-[1200px] max-h-[90vh] max-w-[95vw] bg-palette-1 flex-row shadow-2xl rounded-2xl`}>
+        <div className={`flex w-fit lg:w-[1200px] lg:max-h-[90vh] max-w-[95vw] bg-palette-1 flex-col lg:flex-row shadow-2xl rounded-lg overflow-hidden`}>
             <ContactDetails />
             <ContactForm />
         </div>

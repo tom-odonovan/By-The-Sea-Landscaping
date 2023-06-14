@@ -8,11 +8,11 @@ import ContactCard from './ContactCard';
 
 const ServiceInfo = ({ active }) => (
     <div className='relative z-1 flex flex-col lg:flex-row w-[100vw] h-full lg:h-[600px]'>
-        <div className={`${styles.paddings} bg-white bg-hero-pattern w-full lg:w-2/3 flex items-center justify-end`}>
+        <div className={`${styles.paddings} bg-white bg-hero-pattern w-full lg:w-2/3 flex items-center justify-center lg:justify-end`}>
             <motion.div
                 variants={fadeIn('up', 'tween', 0.1, 1)}
             >
-                <div className='w-fit flex flex-col my-8 py-4 pl-16 border-l-[1px] border-palette-2 mr-[100px]'>
+                <div className='w-fit flex flex-col my-8 py-4 px-0 sm:px-16 lg:pr-[100px] sm:border-l-[1px] border-palette-2'>
                     <div className='flex flex-row items-center w-full max-w-[600px]'>
                         <img
                             src={active.icon.img}

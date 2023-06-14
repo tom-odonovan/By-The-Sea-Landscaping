@@ -6,7 +6,7 @@ import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion'
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10 min-h-[1100px] flex flex-col justify-center`} id='about'>
+  <section className={`p-0 lg:p-[100px] relative z-10 min-h-[1100px] flex flex-col justify-end lg:justify-center`} id='about'>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
@@ -22,10 +22,10 @@ const About = () => (
           <img
             src='/imgs/hedge-trimming-2.jpg'
             alt='2 men trimming hedges'
-            className='relative w-screen lg:w-[500px] min-h-[600px] h-full object-cover object-center z-40 rounded-lg shadow-xl'
+            className='relative w-full lg:max-w-[400px] xl:max-w-[500px] min-h-[600px] h-full object-cover object-cover z-40 lg:rounded-lg shadow-xl'
           />
           <div className='hidden lg:block'>
-            <div className='absolute -top-[50px] -left-[50px] h-full w-full bg-palette-1 z-0' />
+            <div className='absolute -top-[50px] -left-[50px] h-full w-full bg-palette-1 shadow-2xl z-0' />
             <div className='absolute -bottom-4 -right-4 h-full w-full bg-palette-5 z-20' />
             <div className='absolute -bottom-[50px] -right-[50px] h-full w-full border-4 border-palette-1 z-10' />
           </div>
@@ -33,7 +33,7 @@ const About = () => (
 
         <motion.div
           variants={fadeIn('left', 'tween', 0.2, 1)}
-          className='flex flex-col justify-center items-start gap-12 mt-[50px] w-screen lg:w-[700px]'
+          className='px-6 lg:px-0 lg:py-12 flex flex-col justify-center items-start gap-12 lg:mt-[50px] flex-1'
         >
           <motion.div
             variants={fadeIn('left', 'tween', 0.2, 1)}

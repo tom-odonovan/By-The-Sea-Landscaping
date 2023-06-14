@@ -16,7 +16,7 @@ const Footer = () => (
       whileInView='show'
       className={`max-w-[1700px] mx-auto flex flex-col gap-8 items-center justify-between`}>
       
-      <div className='flex flex-row flex-wrap py-[100px] gap-[50px]'>
+      <div className='flex flex-row flex-wrap justify-start md:justify-center py-[100px] gap-[50px] w-[400px] md:w-[850px] 2xl:w-full'>
         <div className='flex flex-row items-center pb-12 pr-[30px]'>
           <img
             src='/Logos/Logo-dark.png'
@@ -121,7 +121,7 @@ const Footer = () => (
 
       <div className='h-[1px] w-full bg-palette-3 opacity-50' />
 
-      <p className='text-white text-[14px] text-center'>
+      <p className='text-white text-[12px] sm:text-[14px] text-center'>
         © Copyright By The Sea Landscaping 2023 | Website by 
         <a href='mailto:tom.odonovan01@gmail.com' className='font-bold px-1 cursor-pointer'>
           Tom O'Donovan

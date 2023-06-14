@@ -12,7 +12,7 @@ const Page = () => {
   const [overlay, setOverlay] = useState(false);
 
   return (
-    <div className="bg-palette-5">
+    <div className="bg-palette-5 w-full">
       
       <div className={`${overlay && 'fixed inset-0 z-20 bg-[rgba(0,0,0,0.3)] backdrop-blur-[6px]'} transition duration-500`} />
      
@@ -23,7 +23,7 @@ const Page = () => {
         <Services />
         <WhyChooseUs />
         <Explore />
-        {/* <Blog /> */}x
+        {/* <Blog /> */}
         <Feedback />
         <GetInTouch />
         {/* <FollowUs /> */}

@@ -11,7 +11,7 @@ import { guarantee } from '../constants';
 export const WhyChooseUs = () => {
 
   return (
-    <section className={`px-0 xl:px-[100px] relative z-10 bg-palette-4 flex flex-col justify-center items-center lg:py-[100px]`} id='guarantee'>
+    <section className={`px-0 xl:px-[100px] max-w-full relative z-10 bg-palette-4 flex flex-col justify-center items-center lg:py-[100px]`} id='guarantee'>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -34,7 +34,7 @@ export const WhyChooseUs = () => {
 
         <motion.div
           variants={fadeIn('left', 'tween', 0.2, 1)}
-          className={`flex flex-col justify-center items-center lg:items-start py-[50px] px-12 md:p-[100px] xl:py-[150px]`}
+          className={`flex flex-col justify-center items-center lg:items-start my-[50px] mx-12 md:m-[100px] xl:my-[150px]`}
 
         >
           <TypingText title='| Our Guarantee' />

@@ -71,7 +71,7 @@ const Header = ({setOverlay}) => {
               offset={0}
               duration={300}
             >
-              <button className='hidden md:flex font-bold text-palette-5 text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-palette-5 rounded-full hover:bg-palette-5 hover:text-palette-1/[.85] transition duration-300'
+              <button className='sm:text-red-500 md:text-yellow-500 lg:text-green-500 hidden md:flex font-bold text-palette-5 text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-palette-5 rounded-full hover:bg-palette-5 hover:text-palette-1/[.85] transition duration-300'
               >GET A FREE QUOTE</button>
             </Link>
             

@@ -10,7 +10,7 @@ import { latestProjects } from '../constants';
 
 const Explore = () => {
 
-  const [active, setActive] = useState('project-2')
+  const [active, setActive] = useState('project-3')
 
   return (
     <section className={`${styles.paddings}`} id='explore'>
@@ -23,7 +23,7 @@ const Explore = () => {
       >
         <TypingText title='| Explore' textStyles='text-center' />
         <TitleText title='Latest Projects' textStyles='text-center' />
-        <div className='mt-[70px] flex lg:flex-row flex-col h-[70vh] max-h-[800px] min-h-[450px] gap-5'>
+        <div className='mt-[70px] flex lg:flex-row flex-col h-[95vh] lg:h-[70vh] max-h-[800px] min-h-[450px] gap-5'>
           {latestProjects.map((project, index) => (
             <ExploreCard
               key={project.id}
