@@ -1,7 +1,7 @@
 'use client';
 
 import { Header, Footer, BackToTop } from '../components';
-import { Hero, About, Services, Explore, WhyChooseUs, Blog, Feedback, FollowUs, GetInTouch } from '../sections';
+import { Hero, About, Services, Explore, WhyChooseUs, Blog, Reviews, FollowUs, GetInTouch } from '../sections';
 import { useState } from 'react';
 import { useRef } from 'react';
 
@@ -24,7 +24,7 @@ const Page = () => {
         <WhyChooseUs />
         <Explore />
         {/* <Blog /> */}
-        <Feedback />
+        <Reviews />
         <GetInTouch />
         {/* <FollowUs /> */}
         <BackToTop pageRef={pageRef} />

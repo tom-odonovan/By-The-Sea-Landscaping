@@ -22,10 +22,10 @@ export const navbar = [
   //   name: 'Gallery',
   //   path: 'gallery',
   // },
-  {
-    name: 'Blog',
-    path: 'blog',
-  },
+  // {
+  //   name: 'Blog',
+  //   path: 'blog',
+  // },
   {
     name: 'Contact',
     path: 'contact',

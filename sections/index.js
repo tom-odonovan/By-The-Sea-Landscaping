@@ -5,7 +5,7 @@ import WhyChooseUs from './WhyChooseUs';
 import Explore from './Explore';
 import Blog from './Blog';
 import FollowUs from './FollowUs';
-import Feedback from './Feedback';
+import Reviews from './Reviews';
 import GetInTouch from './GetInTouch';
 
 export {
@@ -16,6 +16,6 @@ export {
   WhyChooseUs,
   Blog,
   FollowUs,
-  Feedback,
+  Reviews,
   GetInTouch,
 };
