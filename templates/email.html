@@ -1,97 +1,94 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title></title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <style type="text/css">
-        body,
-        a {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-        }
-        body {
-            height: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            width: 100% !important;
-        }
+  <title></title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style type="text/css">
+    body,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
 
-        @media screen and (max-width: 525px) {
-            .wrapper {
-                width: 100% !important;
-                max-width: 100% !important;
-            }
-            .padding {
-                padding: 10px 5% 15px 5% !important;
-            }
+    body {
+      height: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
 
-            .section-padding {
-                padding: 0 15px 50px 15px !important;
-            }
-        }
+    @media screen and (max-width: 525px) {
+      .wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
 
-        .email-heading {
-            color: #2a2a2a;
-            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-            font-weight: 400;
-            text-align: center;
-            font-size: 32px;
-        }
+      .padding {
+        padding: 10px 5% 15px 5% !important;
+      }
 
-        .email-container {
-            margin-bottom: 24px;
-            padding: 50px 80px;
-            border: 2px solid rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            width: 400px;
-            margin: 0 auto;
-        }
+      .section-padding {
+        padding: 0 15px 50px 15px !important;
+      }
+    }
 
-        .field-label {
-            color: #2a2a2a;
-            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-            font-weight: 500;
-            text-align: left;
-            line-height: 20px;
-            font-size: 24px;
-            margin: 0px;
-            padding: 0;
-        }
+    .email-heading {
+      color: #2a2a2a;
+      font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      font-size: 32px;
+    }
 
-        .email-content {
-            color: #2a2a2a;
-            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-            font-weight: 300;
-            text-align: left;
-            line-height: 30px;
-            font-size: 20px;
-            margin: 0 0 24px;
-            padding: 10px 0 24px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
+    .email-container {
+      margin-bottom: 24px;
+      padding: 50px 80px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 400px;
+      margin: 0 auto;
+    }
 
-        .footer {
-            color: #2a2a2a;
-            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-            text-align: center;
-            font-size: 16px; 
-        }
+    .field-label {
+      color: #2a2a2a;
+      font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      font-weight: 500;
+      text-align: left;
+      line-height: 20px;
+      font-size: 24px;
+      margin: 0px;
+      padding: 0;
+    }
 
-        div[style*="margin: 16px 0;"] {
-            margin: 0 !important;
-        }
-    </style>
+    .email-content {
+      color: #2a2a2a;
+      font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      font-weight: 300;
+      text-align: left;
+      line-height: 30px;
+      font-size: 20px;
+      margin: 0 0 24px;
+      padding: 10px 0 24px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      color: #2a2a2a;
+      font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    div[style*="margin: 16px 0;"] {
+      margin: 0 !important;
+    }
+  </style>
 </head>
-
 <body style="margin: 0 !important; padding: 0 !important; background: none;">
-
-    <h2 class="email-heading">New Contact Message!</h2>
-    <div class="email-container">${htmlData}</div>
-    <p class="footer">Sent via contact form @ bythesealandscapes.com</p>
-                                                
+  <h2 class="email-heading">New Contact Message!</h2>
+  <div class="email-container">${htmlData}</div>
+  <p class="footer">Sent via contact form @ bythesealandscapes.com</p>
 </body>
-
 </html>
