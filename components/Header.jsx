@@ -1,5 +1,6 @@
 'use client';
 
+import { useMediaQuery } from 'react-responsive';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
@@ -9,6 +10,7 @@ import { navbar } from '../constants';
 
 const Header = ({ setOverlay }) => {
   const [active, setActive] = useState(false);
+  const isDesktop = useMediaQuery({ minWidth: 1024 })
 
   const toggleOverlay = () => {
     setOverlay();
@@ -47,7 +49,7 @@ const Header = ({ setOverlay }) => {
                     to={path}
                     spy
                     smooth
-                    offset={path === 'home' ? -100 : 0}
+                    offset={path === 'contact' && !isDesktop ? 600 : isDesktop ? 0 : -90}
                     duration={300}
                     key={name}
                     className="relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group opacity-50 hover:opacity-100"
@@ -78,7 +80,6 @@ const Header = ({ setOverlay }) => {
               <SideBar
                 active={active}
                 handleClick={() => toggleOverlay()}
-                onBlur={() => toggleOverlay()}
               />
             </div>
           </div>

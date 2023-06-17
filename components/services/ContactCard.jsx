@@ -17,7 +17,7 @@ const ContactCard = () => (
       to="contact"
       spy
       smooth
-      offset={50}
+      offset={600}
       duration={300}
     >
       <button type="button" className="font-bold border-[1px] border-white px-6 py-2 rounded-xl hover:bg-white hover:text-palette-2 active:scale-95 transition duration-300">CONTACT US</button>
