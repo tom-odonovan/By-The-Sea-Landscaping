@@ -21,7 +21,7 @@ const Page = () => {
         <Hero />
         <About /> 
         <Services />
-        <WhyChooseUs />
+        <WhyChooseUs /> 
         <Explore />
         {/* <Blog /> */}
         {/* <Reviews /> */}

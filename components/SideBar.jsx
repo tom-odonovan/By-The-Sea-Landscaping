@@ -47,10 +47,10 @@ const SideBar = ({ active, handleClick }) => {
                   offset={path === 'contact' && !isDesktop ? 600 : isDesktop ? 0 : -90}
                   duration={300}
                   key={name}
-                  className="relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group hover:text-black"
+                  className="relative text-left py-8 pr-[220px] transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group hover:text-black"
                 >
                   {name}
-                  <div className="absolute bottom-7 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-palette-2 transition-all duration-300 group-hover:w-full" />
+                  <div className="absolute bottom-7 left-0 w-0 h-[2px] bg-palette-2 transition-all duration-300 group-hover:w-[60px]" />
                 </Link>
                 <div className="relative top-[15px] h-[1px] w-full bg-black opacity-10" />
               </li>
@@ -59,7 +59,7 @@ const SideBar = ({ active, handleClick }) => {
         </nav>
 
         <div className="flex flex-row pt-16 pb-6 gap-6 justify-center items-center">
-          <FaPhoneAlt className="w-[30px] h-[30px] text-palette-2" />
+          <FaPhoneAlt className="w-[30px] h-[30px] text-palette-1" />
           <div>
             <h4>Call Today</h4>
             <a href="tel://+61439439391">
@@ -74,8 +74,8 @@ const SideBar = ({ active, handleClick }) => {
 
             return (
               <a href={href} key={name}>
-                <div className={`${styles.flexCenter} w-[40px] h-[40px] rounded-full bg-palette-2 border-[1px] border-palette-2 hover:border-palette-2 cursor-pointer hover:bg-white transition duration-300 group`}>
-                  <SocialIcon size={20} className="text-white group-hover:text-palette-2" />
+                <div className={`${styles.flexCenter} w-[50px] h-[50px] rounded-full bg-palette-1 border-[1px] border-palette-1 hover:border-palette-1 cursor-pointer hover:bg-white transition duration-300 group`}>
+                  <SocialIcon size={20} className="text-white group-hover:text-palette-1" />
                 </div>
               </a>
             );

@@ -22,7 +22,7 @@ const Header = ({ setOverlay }) => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="p-8 relative bg-palette-1/[.85] sticky top-0 z-20 shadow-2xl"
+      className="p-6 relative bg-palette-1/[.85] sticky top-0 z-20 shadow-2xl"
     >
       <div className="max-w-[1700px] mx-auto flex justify-between gap-8 h-[30px] items-center">
         <Link
