@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { scroller } from 'react-scroll';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { MdError } from 'react-icons/md';
