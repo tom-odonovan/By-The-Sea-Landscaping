@@ -15,7 +15,7 @@ const styles = {
 
     // hero section
     heroHeading:
-        'font-bold font-sans font-bold xl:text-[80px] md:text-[60px] text-[50px] lg:leading-[120px] md:leading-[100px] sm:leading-[60px] text-palette-5',
+        'font-bold font-sans font-bold text-[45px] md:text-[60px] xl:text-[80px] sm:leading-[60px] md:leading-[100px] lg:leading-[120px] text-palette-5',
     heroText:
         'xl:w-[400px] md:w-[350px] sm:w-[300px] w-[250px] font-sans font-light xl:text-[24px] md:text-[20px] sm:text-[18px] text-[18px] lg:leading-[40px] md:leading-[32px] sm:leading-[24px] text-palette-5',
     heroBtn:
@@ -23,7 +23,7 @@ const styles = {
 
     // footer section
 
-    footerHeading: 'w-fit pr-2 text-white font-sans text-[16px] sm:text-[20px] text-palette-5 border-b-1 border-palette-3/50 pb-2',
+    footerHeading: 'w-fit pr-2 text-white font-sans text-[20px] text-palette-5 border-b-1 border-palette-3/50 pb-2',
 };
 
 export default styles;

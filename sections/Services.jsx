@@ -23,7 +23,7 @@ const Services = () => {
         className={`mx-auto flex flex-col items-center`}
       >
         
-        <div className='flex flex-col gap-4 relative -top-2 lg:top-10'>
+        <div className='flex flex-col gap-4 relative sm:-top-4 lg:top-10'>
           <motion.div
             variants={fadeIn('right', 'tween', 0.2, 1)}
             className={`${styles.innerWidth} ${styles.xPaddings} mx-auto pt-[50px] flex-[0.75] flex justify-between flex-col`}
@@ -33,7 +33,7 @@ const Services = () => {
             <TitleText title={<>What We Offer</>} />
           </motion.div>
 
-          <div className={`${styles.flexCenter} flex flex-row gap-2 sm:gap-4 flex-wrap w-full md:w-[600px] min-[1100px]:w-[1200px] z-10`}>
+          <div className={`${styles.flexCenter} flex flex-row sm:gap-4 flex-wrap w-full md:w-[600px] min-[1100px]:w-[1200px] z-10`}>
             {services.map((item, index) => (
               <ServicesCard
                 key={index}

@@ -7,20 +7,20 @@ import { Link } from 'react-scroll';
 import { heroBtns } from '../constants';
 
 const Hero = () => (
-  <section className={`sm:pl-16 pl-6 w-screen`} id='home'>
+  <section className={`relative -top-[95px] sm:pl-16 pl-6 w-full`} id='home'>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
-      className={`2xl:max-w-[1450px] w-full min-h-screen mx-auto flex flex-col justify-center`}
+      className={`2xl:max-w-[1450px] w-full min-h-screen mx-auto flex flex-col justify-end`}
     >
       <motion.div
         variants={fadeIn('down', 'tween', 0.2, 1)}
-        className='absolute inset-0 w-full bg-hero-cover bg-black/30 bg-blend-multiply bg-cover bg-center min-h-screen'>
+        className='absolute left-0 w-full bg-hero-cover bg-black/30 bg-blend-multiply bg-cover bg-center min-h-screen'>
       </motion.div>
 
-      <div className='flex flex-col justify-end items-left gap-10 relative z-10'>
+      <div className='flex flex-col justify-end items-left gap-10 pb-[200px] relative z-10'>
         <div>
           <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
             Transform Your

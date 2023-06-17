@@ -78,6 +78,7 @@ const Header = ({ setOverlay }) => {
               <SideBar
                 active={active}
                 handleClick={() => toggleOverlay()}
+                onBlur={() => toggleOverlay()}
               />
             </div>
           </div>

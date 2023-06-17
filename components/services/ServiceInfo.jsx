@@ -24,7 +24,7 @@ const ServiceInfo = ({ active }) => (
             </div>
           </div>
           {active.text.split('\n').map((p, index) => (
-            <p className="mt-8 max-w-[600px] text-[14px]" key={index}>{p}</p>
+            <p className="mt-8 max-w-[600px] text-[16px] leading-7" key={index}>{p}</p>
           ))}
         </div>
       </motion.div>

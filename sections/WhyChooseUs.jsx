@@ -1,5 +1,6 @@
 'use client';
 
+import { useMediaQuery } from 'react-responsive';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
@@ -9,6 +10,8 @@ import { guarantee } from '../constants';
 
 
 export const WhyChooseUs = () => {
+
+  const isDesktop = useMediaQuery({ minWidth: 1024 })
 
   return (
     <section className={`px-0 xl:px-[100px] max-w-full relative z-10 bg-palette-4 flex flex-col justify-center items-center lg:py-[100px]`} id='guarantee'>
@@ -21,7 +24,7 @@ export const WhyChooseUs = () => {
       >
 
         <motion.div
-          variants={fadeIn('right', 'tween', 0.2, 1)}
+          variants={isDesktop ? fadeIn('right', 'tween', 0.2, 1) : fadeIn('up', 'tween', 0.2, 1)}
           className={`w-full lg:w-1/2 h-[600px] lg:h-full xl:rounded-l-lg overflow-hidden`}
         >
           <img
@@ -33,8 +36,8 @@ export const WhyChooseUs = () => {
 
 
         <motion.div
-          variants={fadeIn('left', 'tween', 0.2, 1)}
-          className={`flex flex-col justify-center items-center lg:items-start my-[50px] mx-12 md:m-[100px] xl:my-[150px]`}
+          variants={isDesktop ? fadeIn('left', 'tween', 0.2, 1) : fadeIn('up', 'tween', 0.2, 1)}
+          className={`flex flex-col justify-center items-center lg:items-start my-[50px] mx-4 sm:mx-12 md:m-[100px] xl:my-[150px]`}
 
         >
           <TypingText title='| Our Guarantee' />

@@ -9,7 +9,7 @@ import ContactForm from "../components/contact/ContactForm";
 import ContactDetails from "../components/contact/ContactDetails";
 
 const GetInTouch = () => (
-    <section className='flex flex-col items-center bg-palette-4 py-[100px] pb-[200px]' id='contact'>
+    <section className='flex flex-col items-center bg-palette-4 pt-[100px] sm:pb-[200px]' id='contact'>
         <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -20,7 +20,7 @@ const GetInTouch = () => (
             <TypingText title='| Contact' textStyles='text-center' />
             <TitleText title={<>Get In Touch</>} textStyles='text-center mb-[50px]' />
         </motion.div>
-        <div className={`flex w-fit lg:w-[1200px] lg:max-h-[90vh] max-w-[95vw] bg-palette-1 flex-col lg:flex-row shadow-2xl rounded-lg overflow-hidden`}>
+        <div className={`flex w-fit lg:max-w-[1200px]  bg-palette-1 flex-col lg:flex-row shadow-2xl sm:rounded-lg overflow-hidden`}>
             <ContactDetails />
             <ContactForm />
         </div>

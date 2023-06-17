@@ -54,16 +54,6 @@ const ContactForm = () => {
     }),
   });
 
-  // Position form at center of viewport when in focus using react-scroll
-
-  const handleFocus = () => {
-    scroller.scrollTo('contact', {
-      duration: 100,
-      smooth: true,
-      offset: 100,
-    });
-  };
-
   return (
     <div className="relative flex flex-col px-8 py-20 sm:px-20 lg:px-12 xl:px-20 leading-8 max-w-[700px] bg-white">
       {submitted ? (
@@ -110,7 +100,6 @@ const ContactForm = () => {
           <form
             method="POST"
             onSubmit={handleSubmit}
-            onFocus={handleFocus}
           >
             <div>
               <div className={`${isSubmitting && 'opacity-30'} flex flex-row flex-wrap pt-12 gap-6 gap-y-10 transition duration-300`}>

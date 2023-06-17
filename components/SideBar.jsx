@@ -8,7 +8,7 @@ import styles from '../styles';
 
 const SideBar = ({ active, handleClick }) => (
   <div>
-    <div className={`${active ? 'translate-x-0' : 'translate-x-full'} transition duration-300 ease-in-out p-8 flex flex-col fixed top-0 right-0 bg-white w-[350px] h-full shadow-2xl opacity-100 z-5 overflow-y-auto flex-grow`}>
+    <div className={`${active ? 'translate-x-0' : 'translate-x-full'} transition duration-300 ease-in-out p-8 flex flex-col fixed top-0 right-0 bg-white w-3/4 sm:w-[350px] h-full shadow-2xl opacity-100 z-5 overflow-y-auto flex-grow`}>
       <div className="w-full flex justify-end">
         <button type="button" onClick={() => handleClick()}>
           <GrClose className="relative left-[2px] -top-[3px] w-[30px] h-[30px] cursor-pointer" />
