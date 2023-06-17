@@ -9,7 +9,6 @@ import { footerVariants } from '../utils/motion';
 import styles from '../styles';
 
 const Footer = () => {
-
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (

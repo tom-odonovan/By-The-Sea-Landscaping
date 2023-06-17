@@ -8,8 +8,7 @@ import { navbar, socials } from '../constants';
 import styles from '../styles';
 
 const SideBar = ({ active, handleClick }) => {
-
-  const isDesktop = useMediaQuery({ minWidth: 1024 })
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
     <div>

@@ -10,7 +10,7 @@ import { navbar } from '../constants';
 
 const Header = ({ setOverlay }) => {
   const [active, setActive] = useState(false);
-  const isDesktop = useMediaQuery({ minWidth: 1024 })
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   const toggleOverlay = () => {
     setOverlay();

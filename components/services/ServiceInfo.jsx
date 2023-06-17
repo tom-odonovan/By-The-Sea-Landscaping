@@ -33,7 +33,7 @@ const ServiceInfo = ({ active }) => (
       <img
         src={active.img}
         alt={active.alt}
-        className="object-cover w-full h-full"
+        className="object-cover w-full h-full brightness-60"
       />
       <ContactCard />
     </div>
