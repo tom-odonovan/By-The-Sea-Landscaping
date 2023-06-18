@@ -17,12 +17,10 @@ const Hero = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className={`2xl:max-w-[1450px] w-full min-h-screen mx-auto flex flex-col justify-end`}
+        className="2xl:max-w-[1450px] w-full min-h-screen mx-auto flex flex-col justify-end"
       >
-        <motion.div
-          variants={fadeIn('down', 'tween', 0.2, 1)}
-          className='absolute left-0 w-full bg-hero-cover bg-black/30 bg-blend-multiply bg-cover bg-center min-h-screen'>
-        </motion.div>
+        <div className='absolute left-0 w-full bg-hero-cover bg-black/30 bg-blend-multiply bg-cover bg-center min-h-screen'>
+        </div>
 
         <div className='flex flex-col justify-end items-left gap-10 pb-[200px] relative z-10'>
           <div>

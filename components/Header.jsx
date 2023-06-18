@@ -3,9 +3,7 @@
 import { useMediaQuery } from 'react-responsive';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import { motion } from 'framer-motion';
 import SideBar from './SideBar';
-import { navVariants } from '../utils/motion';
 import { navbar } from '../constants';
 
 const Header = ({ setOverlay }) => {
@@ -18,12 +16,7 @@ const Header = ({ setOverlay }) => {
   };
 
   return (
-    <motion.nav
-      variants={navVariants}
-      initial="hidden"
-      whileInView="show"
-      className="p-6 relative bg-palette-1/[.85] sticky top-0 z-20 shadow-2xl"
-    >
+    <nav className="p-6 relative bg-palette-1/[.85] fixed top-0 z-20 shadow-2xl">
       <div className="max-w-[1700px] mx-auto flex justify-between gap-8 h-[30px] items-center">
         <Link
           activeClass="active"
@@ -85,7 +78,7 @@ const Header = ({ setOverlay }) => {
           </div>
         </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 

@@ -2,10 +2,8 @@
 
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-scroll';
-import { motion } from 'framer-motion';
 import { IoIosArrowForward } from 'react-icons/io';
 import { socials, navbar, services, contact } from '../constants';
-import { footerVariants } from '../utils/motion';
 import styles from '../styles';
 
 const Footer = () => {
@@ -13,13 +11,8 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-palette-1 bg-hero-pattern z-5 opacity-90">
-      <motion.div
-        variants={footerVariants}
-        initial="hidden"
-        whileInView="show"
-        className="mx-auto flex flex-col gap-8 items-center justify-between"
-      >
 
+      <div className="mx-auto flex flex-col gap-8 items-center justify-between">
         <div className="flex flex-row flex-wrap justify-start md:justify-center px-8 py-[50px] lg:py-[100px] gap-[50px] max-w-full md:w-[870px] min-[1650px]:w-full">
           <div className="flex flex-row items-center pb-12 pr-[30px]">
             <img
@@ -129,7 +122,7 @@ const Footer = () => {
             Tom O'Donovan
           </a>
         </p>
-      </motion.div>
+      </div>
     </footer>
   );
 };
