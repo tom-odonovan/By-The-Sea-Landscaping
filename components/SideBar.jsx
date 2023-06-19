@@ -35,7 +35,7 @@ const SideBar = ({ active, handleClick }) => {
           </Link>
         </div>
         <nav>
-          <ul className="flex flex-col gap-8 xl:gap-12">
+          <ul className="flex flex-col">
             {navbar.map(({ name, path }) => (
               <li key={name} className="text-[12px] sm:text-[14px] font-bold">
                 <Link
@@ -47,12 +47,12 @@ const SideBar = ({ active, handleClick }) => {
                   offset={path === 'contact' && !isDesktop ? 600 : isDesktop ? 0 : -90}
                   duration={300}
                   key={name}
-                  className="relative text-left py-8 pr-[220px] transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group hover:text-black"
+                  className="relative text-left block w-full py-6 pr-full transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group hover:text-black border-b-1 border-black-100"
                 >
                   {name}
                   <div className="absolute bottom-7 left-0 w-0 h-[2px] bg-palette-2 transition-all duration-300 group-hover:w-[60px]" />
                 </Link>
-                <div className="relative top-[15px] h-[1px] w-full bg-black opacity-10" />
+                {/* <div className="relative top-[15px] h-[1px] w-full bg-black opacity-10" /> */}
               </li>
             ))}
           </ul>

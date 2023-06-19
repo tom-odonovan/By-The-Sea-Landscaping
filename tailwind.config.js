@@ -8,7 +8,20 @@ module.exports = {
   ],
   mode: 'jit',
   theme: {
+    screens: {
+      'small-mobile': '320px',
+      'mobile': '380px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'custom-lg': '1100px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
+      screens: {
+        'short': { 'raw': '(max-height: 750px)' },
+      },
       gradientColorStops: {
         'white-green': ['#FFFFFF', '#3CAB80']
       },
@@ -32,6 +45,7 @@ module.exports = {
       },
      backgroundImage: {
         'hero-pattern': "url('/hero-pattern-5.png')",
+        'hero-pattern-2': "url('/hero-pattern-10.png')",
         'hero-cover': "url('/imgs/mowing-man.jpg')",
         'about': "url('/imgs/hedge-trimming-2.jpg')",
         'contact': "url('/imgs/contact-bg.jpg')",

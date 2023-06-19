@@ -1,7 +1,7 @@
 'use client';
 
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
-  <div className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'} flex items-center justify-center min-w-[130px] transition-[flex] duration-[1s] ease-out-flex cursor-pointer`}
+const ExploreCard = ({ id, imgUrl, title, active, handleClick }) => (
+  <div className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[1.5]'} flex items-center justify-center min-w-[130px] transition-[flex] duration-[1s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
     <img
@@ -16,8 +16,8 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         </h3>
       </div>
     ) : (
-      <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-xl shadow-2xl">
-        <h2 className="mt-[24px] font-semibold md:text-[22px] sm:text-[20px] text-[24px] text-white">
+      <div className="absolute bottom-0 p-6 lg:p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-xl shadow-2xl">
+        <h2 className="font-semibold md:text-[22px] sm:text-[20px] text-[24px] text-white">
           {title}
         </h2>
         {/* <a href="#" className="font-normal text-[14px] leading-[20px] text-white hover:underline">

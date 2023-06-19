@@ -104,7 +104,7 @@ const Footer = () => {
                       <div className="border-[1px] border-palette-3 bg-palette-1 rounded-full p-2 group-hover:border-palette-3 group-hover:bg-palette-3 transition duration-300">
                         <ContactIcon size={20} className="text-palette-3 group-hover:text-palette-1 text-center w-[20px]" />
                       </div>
-                      <p className="text-palette-5 text-[14px] sm:text-[16px] font-bold">{content}</p>
+                      <p className="text-palette-5 text-[14px] sm:text-[16px] w-[50vw] small-mobile:w-[60vw] mobile:w-full break-words">{content}</p>
                     </div>
                   </a>
                 );

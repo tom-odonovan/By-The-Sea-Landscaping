@@ -8,6 +8,7 @@ import { fadeIn, staggerContainer } from '../utils/motion'
 
 const About = () => {
 
+  const smallMobile = useMediaQuery({ maxWidth: 320 })
   const isDesktop = useMediaQuery({ minWidth: 1024 })
 
   return (
@@ -41,7 +42,7 @@ const About = () => {
             className='px-6 lg:px-0 lg:py-12 flex flex-col justify-center items-start gap-12 lg:mt-[50px] flex-1'
           >
             <motion.div
-              variants={fadeIn('left', 'tween', 0.2, 1)}
+              variants={smallMobile ? fadeIn('up', 'tween', 0.2, 1) : fadeIn('left', 'tween', 0.2, 1)}
               className='flex flex-col items-start'
             >
               <TypingText title='| About Us' textStyles='text-center' />

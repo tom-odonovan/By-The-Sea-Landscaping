@@ -54,7 +54,7 @@ const ContactForm = () => {
   });
 
   return (
-    <div className="relative flex flex-col px-8 py-20 sm:px-20 lg:px-12 xl:px-20 leading-8 max-w-[700px] bg-white">
+    <div className="relative flex flex-col px-8 py-20 sm:px-20 lg:px-12 xl:px-20 leading-8 w-full max-w-[700px] bg-white">
       {submitted ? (
 
       // Display message confirmation on submit

@@ -11,8 +11,8 @@ const ServiceInfo = ({ active }) => (
       <motion.div
         variants={fadeIn('up', 'tween', 0.1, 1)}
       >
-        <div className="w-fit flex flex-col my-8 py-4 px-0 sm:px-16 lg:pr-[100px] sm:border-l-[1px] border-palette-2">
-          <div className="flex flex-row items-center w-full max-w-[600px]">
+        <div className="w-fit flex flex-col my-8 py-4 px-0 sm:px-16 lg:pr-[170px] sm:border-l-[1px] border-palette-2">
+          <div className="flex small-mobile:flex-row items-center w-full max-w-[600px]">
             <img
               src={active.icon.img}
               alt={active.icon.alt}
@@ -20,7 +20,7 @@ const ServiceInfo = ({ active }) => (
             />
             <div className="flex flex-col ml-4">
               <h4 className="font-bold text-palette-2">{active.subtitle}</h4>
-              <h3 className="font-bold text-[28px]">{active.title}</h3>
+              <h3 className="font-bold text-[22px] mobile:text-[28px]">{active.title}</h3>
             </div>
           </div>
           {active.text.split('\n').map((p, index) => (

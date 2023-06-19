@@ -16,7 +16,7 @@ const Header = ({ setOverlay }) => {
   };
 
   return (
-    <nav className="p-6 relative bg-palette-1/[.85] fixed top-0 z-20 shadow-2xl">
+    <nav className="p-6 relative bg-palette-1 bg-[length:1000px_500px] bg-hero-pattern-2 fixed top-0 z-20 shadow-2xl">
       <div className="max-w-[1700px] mx-auto flex justify-between gap-8 h-[30px] items-center">
         <Link
           activeClass="active"

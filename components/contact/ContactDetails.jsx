@@ -14,14 +14,14 @@ const ContactDetails = () => (
         return (
           <a key={name} href={url} className="cursor-pointer group">
             <div className="flex flex-row items-center">
-              <div className="border-[1px] border-palette-2 bg-palette-2 rounded-full p-2 mr-6  group-hover:border-white group-hover:bg-white transition duration-300">
+              <div className="border-[1px] border-palette-2 bg-palette-2 rounded-full p-2 mr-4  group-hover:border-white group-hover:bg-white transition duration-300">
                 <ContactIcon size={30} className="text-palette-1 group-hover:text-palette-2 text-center w-[30px]" />
               </div>
-              <p className="text-[16px] sm:text-lg">{content}</p>
+              <p className="text-[14px] mobile:text-[16px] sm:text-lg w-[40vw] small-mobile:w-[60vw] mobile:w-full break-words">{content}</p>
             </div>
           </a>
         );
-      })};
+      })}
     </div>
   </div>
 );

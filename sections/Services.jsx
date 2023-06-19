@@ -14,7 +14,7 @@ const Services = () => {
 
   return (
 
-    <section className={`relative z-10 bg-palette-4 min-h-[1100px] flex flex-col justify-center`} id='services'>
+    <section className={`relative z-10 sm:bg-palette-4 min-h-[1100px] flex flex-col justify-center`} id='services'>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -33,7 +33,7 @@ const Services = () => {
             <TitleText title={<>What We Offer</>} />
           </motion.div>
 
-          <div className={`${styles.flexCenter} flex flex-row sm:gap-4 flex-wrap w-full md:w-[600px] min-[1100px]:w-[1200px] z-10`}>
+          <div className={`${styles.flexCenter} flex flex-row sm:gap-4 flex-wrap w-full md:w-[600px] custom-lg:w-[1200px] z-10`}>
             {services.map((item, index) => (
               <ServicesCard
                 key={index}
