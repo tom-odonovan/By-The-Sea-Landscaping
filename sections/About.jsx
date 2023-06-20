@@ -9,7 +9,7 @@ import { fadeIn, staggerContainer } from '../utils/motion'
 const About = () => {
 
   const smallMobile = useMediaQuery({ maxWidth: 320 })
-  const isDesktop = useMediaQuery({ minWidth: 1024 })
+  const isDesktop = useMediaQuery({ maxWidth: 1024 })
 
   return (
     <section className={`p-0 lg:p-[100px] relative z-10 min-h-[1100px] flex flex-col justify-end lg:justify-center`} id='about'>
@@ -17,12 +17,12 @@ const About = () => {
         variants={staggerContainer}
         initial='hidden'
         whileInView='show'
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col gap-12`}
       >
         <div className='flex flex-col-reverse lg:flex-row gap-8 lg:gap-40 mt-[50px] w-fit h-fit'>
           <motion.div
-            variants={isDesktop ? fadeIn('right', 'tween', 0.1, 1) : fadeIn('up', 'tween', 0.1, 1)}
+            variants={isDesktop ? fadeIn('up', 'tween', 0.1, 1) : fadeIn('right', 'tween', 0.1, 1)}
             className='relative z-50'
           >
             <img
@@ -38,7 +38,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            variants={isDesktop ? fadeIn('left', 'tween', 0.2, 1) : fadeIn('up', 'tween', 0.2, 1)}
+            variants={isDesktop ? fadeIn('up', 'tween', 0.1, 1) : fadeIn('left', 'tween', 0.1, 1)}
             className='px-6 lg:px-0 lg:py-12 flex flex-col justify-center items-start gap-12 lg:mt-[50px] flex-1'
           >
             <motion.div

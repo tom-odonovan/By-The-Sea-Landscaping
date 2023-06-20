@@ -11,7 +11,6 @@ const Header = ({ setOverlay }) => {
   const [active, setActive] = useState(false);
   const isDesktop = useMediaQuery({ minWidth: 1024 });
   const scrollDirection = useScrollDirection();
-  console.log(scrollDirection);
 
   const toggleOverlay = () => {
     setOverlay();
@@ -19,7 +18,7 @@ const Header = ({ setOverlay }) => {
   };
 
   return (
-    <nav className={`sticky top-0 ${scrollDirection === 'up' ? 'translate-y-0' : '-translate-y-full'} p-6 h-fit relative bg-palette-1/[.90] z-20 shadow-2xl transition duration-300`}>
+    <nav className={`sticky top-0 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} p-6 h-fit relative bg-palette-1/[.90] z-20 shadow-2xl transition duration-300`}>
       <div className="max-w-[1700px] mx-auto flex justify-between gap-8 h-[30px] items-center">
         <Link
           activeClass="active"

@@ -11,7 +11,7 @@ import { guarantee } from '../constants';
 
 export const WhyChooseUs = () => {
 
-  const isDesktop = useMediaQuery({ minWidth: 1024 })
+  const isDesktop = useMediaQuery({ maxWidth: 1024 })
 
   return (
     <section className={`px-0 xl:px-[100px] max-w-full relative z-10 bg-palette-4 flex flex-col justify-center items-center lg:py-[100px]`} id='guarantee'>
@@ -19,16 +19,16 @@ export const WhyChooseUs = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} flex flex-col-reverse lg:flex-row lg:h-[900px]  justify-center items-center bg-white xl:rounded-lg`}
       >
 
         <motion.div
-          variants={isDesktop ? fadeIn('right', 'tween', 0.2, 1) : fadeIn('up', 'tween', 0.2, 1)}
+          variants={isDesktop ? fadeIn('up', 'tween', 0.2, 1) : fadeIn('right', 'tween', 0.2, 1)}
           className={`w-full lg:w-1/2 h-[600px] lg:h-full xl:rounded-l-lg overflow-hidden`}
         >
           <img
-            src="/imgs/poolside-01.jpeg"
+            src="/imgs/pruning.jpg"
             alt='Poolside'
             className='object-cover w-full h-full'
           />
@@ -36,7 +36,7 @@ export const WhyChooseUs = () => {
 
 
         <motion.div
-          variants={isDesktop ? fadeIn('left', 'tween', 0.2, 1) : fadeIn('up', 'tween', 0.2, 1)}
+          variants={isDesktop ? fadeIn('up', 'tween', 0.2, 1) : fadeIn('left', 'tween', 0.2, 1)}
           className={`flex flex-col justify-center items-center lg:items-start my-[50px] mx-4 sm:mx-12 md:m-[100px] xl:my-[150px]`}
 
         >
