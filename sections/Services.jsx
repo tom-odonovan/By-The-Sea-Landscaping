@@ -12,6 +12,17 @@ const Services = () => {
 
   const [active, setActive] = useState(services[0])
 
+  const handleChange = (direction) => {
+    const index = services.indexOf(active)
+    const nextIndex = direction === 'left' ? index - 1 : index + 1
+    if (nextIndex < 0) {
+      setActive(services[services.length - 1])
+    } else if (nextIndex > services.length - 1) {
+      setActive(services[0])
+    } else
+    setActive(services[nextIndex])
+  }
+
   return (
 
     <section className={`relative z-10 sm:bg-palette-4 min-h-[1100px] flex flex-col justify-center`} id='services'>
@@ -19,7 +30,7 @@ const Services = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className={`mx-auto flex flex-col items-center`}
       >
         
@@ -46,7 +57,7 @@ const Services = () => {
           </div>
         </div>
       
-        <ServiceInfo active={active} />
+        <ServiceInfo active={active} handleChange={handleChange} />
         
       </motion.div>
     </section>
