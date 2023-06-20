@@ -11,7 +11,7 @@ const ServiceInfo = ({ active }) => (
       <motion.div
         variants={fadeIn('up', 'tween', 0.1, 1)}
       >
-        <div className="w-fit flex flex-col my-8 py-4 px-0 sm:px-16 lg:pr-[170px] sm:border-l-[1px] border-palette-2">
+        <div className="w-fit flex flex-col mt-8 pt-4 px-0 sm:px-16 lg:pr-[170px] sm:border-l-[1px] border-palette-2">
           <div className="flex small-mobile:flex-row items-center w-full max-w-[600px]">
             <img
               src={active.icon.img}
@@ -26,6 +26,11 @@ const ServiceInfo = ({ active }) => (
           {active.text.split('\n').map((p, index) => (
             <p className="mt-8 max-w-[600px] text-[16px] leading-7" key={index}>{p}</p>
           ))}
+          <div className='hidden md:flex flex-wrap justify-center gap-4 mt-8'>
+            {active.tags.map((tag, index) => (
+              <div className='py-2 px-4 text-[14px] text-palette-2 font-bold border-1 border-palette-2 rounded-full' key={index}>{tag}</div>
+            ))}
+          </div>
         </div>
       </motion.div>
     </div>

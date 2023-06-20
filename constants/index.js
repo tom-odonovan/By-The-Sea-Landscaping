@@ -54,6 +54,12 @@ export const services = [
     subtitle: 'Transform Your Space',
     title: 'Landscaping Services',
     text: 'Our landscaping services are designed to transform your outdoor space into a vibrant and well-maintained environment. From precise lawn mowing and edging to removing leaves and tidying up your garden, we pay attention to every detail. \nOur expert team also specializes in mulching and fertilizing to nourish your plants and promote healthy growth. With a focus on enhancing the aesthetic appeal and functionality of your landscape, we create beautiful outdoor spaces you can enjoy year-round.',
+    tags: [
+      'Lawn Mowing',
+      'Edging',
+      'Mulching',
+      'Fertilizing',
+    ]
   },
   {
     icon: {
@@ -65,6 +71,11 @@ export const services = [
     subtitle: 'Beautiful Tree Solutions',
     title: 'Tree and Plant Care',
     text: 'We understand the importance of proper tree and plant care for a healthy and attractive landscape. Our skilled professionals provide expert hedging services to maintain the shape and density of your hedges. \nWe also offer tree trimming and removal to ensure the safety and beauty of your property. Whether you need regular pruning or assistance with tree removal, we have the knowledge and equipment to handle the task efficiently and safely.',
+    tags: [
+      'Hedge Trimming',
+      'Tree Trimming',
+      'Tree Removal',
+    ]
   },
   {
     icon: {
@@ -76,6 +87,11 @@ export const services = [
     subtitle: 'Elevate Your Yard',
     title: 'Turf Laying',
     text: 'Achieve a lush and vibrant lawn with our comprehensive turf services. We specialize in prepping and laying turf to create a fresh, even, and vibrant green carpet that enhances the beauty of your outdoor space. \nOur dedicated team ensures proper soil preparation, precise turf installation, and tailored care instructions, giving you a healthy and stunning lawn. With our expertise and attention to detail, we\'ll transform your yard into a picturesque setting that you can enjoy with family and friends.',
+    tags: [
+      'Turf Laying',
+      'Turf Preparation',
+      'Turf Care',
+    ]
   },
   {
     icon: {
@@ -87,6 +103,11 @@ export const services = [
     subtitle: 'Maintain Your Oasis',
     title: 'Garden Maintenance',
     text: 'Maintaining a well-kept outdoor space requires regular maintenance. Our maintenance services cover essential tasks such as weed control, ensuring that unwanted weeds don\'t compete with your plants for nutrients and space. \nWe also provide pressure washing to revitalize your outdoor surfaces, removing dirt, grime, and stains. Additionally, our pool cleaning service guarantees crystal-clear waters, creating a welcoming and refreshing oasis right in your backyard.',
+    tags: [
+      'Weed Control',
+      'Pressure Washing',
+      'Pool Cleaning',
+    ]
   }
 ];
 
