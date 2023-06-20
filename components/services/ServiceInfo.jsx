@@ -12,6 +12,7 @@ const ServiceInfo = ({ active, handleChange }) => {
   });
 
   const activeIndex = services.indexOf(active);
+  console.log(activeIndex);
 
   return (
     <div className="relative z-1 flex flex-col lg:flex-row w-[100vw] h-full lg:h-auto">
@@ -20,10 +21,14 @@ const ServiceInfo = ({ active, handleChange }) => {
           <div className="flex flex-row justify-center items-center mt-12">
             <div className="hidden xl:block h-full w-[1px] bg-palette-2" />
             <div {...handlers} className="w-[90vw] sm:w-[80vw] lg:max-w-[550px] xl:max-w-[700px] 2xl:max-w-[800px] h-full overflow-hidden">
-              <div className={`h-auto flex flex-row transform -translate-x-[${activeIndex * 100}%] transition duration-500`}>
-                {services.map((item) => (
+              <div className="h-auto flex flex-row">
+                {services.map((item, i) => (
                   // carousel item
-                  <div key={item} className="flex flex-col justify-center min-w-[90vw] sm:min-w-[80vw] lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] px-2 gap-8 px-0 lg:px-16">
+                  <div
+                    key={i}
+                    style={{ transform: `translateX(calc(-1 * ${activeIndex} * 100%))` }}
+                    className="flex flex-col justify-center min-w-[90vw] sm:min-w-[80vw] lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] px-2 gap-8 px-0 lg:px-16 transition duration-500"
+                  >
                     <div className="flex small-mobile:flex-row items-center w-full">
                       <img
                         src={item.icon.img}

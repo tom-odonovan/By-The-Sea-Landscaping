@@ -5,12 +5,11 @@ import { useState } from 'react';
 import { Link } from 'react-scroll';
 import SideBar from './SideBar';
 import { navbar } from '../constants';
-import { useScrollDirection } from '../utils/hooks';
 
 const Header = ({ setOverlay }) => {
   const [active, setActive] = useState(false);
   const isDesktop = useMediaQuery({ minWidth: 1024 });
-  const scrollDirection = useScrollDirection();
+  // const scrollDirection = useScrollDirection();
 
   const toggleOverlay = () => {
     setOverlay();
@@ -18,7 +17,7 @@ const Header = ({ setOverlay }) => {
   };
 
   return (
-    <nav className={`fixed top-0 ${scrollDirection === 'down' ? '-translate-y-full' : 'sticky'} p-6 h-fit relative bg-palette-1/[.90] z-20 shadow-2xl transition duration-300`}>
+    <nav className="sticky top-0 p-6 h-fit relative bg-palette-1/[.90] z-20 shadow-2xl transition duration-300">
       <div className="max-w-[1700px] mx-auto flex justify-between gap-8 h-[30px] items-center">
         <Link
           activeClass="active"
