@@ -32,6 +32,7 @@ const Header = ({ setOverlay }) => {
             smooth
             offset={-150}
             duration={300}
+            href="/#home"
           >
             <img
               src="/Logos/Logo-text-dark.png"
@@ -52,6 +53,7 @@ const Header = ({ setOverlay }) => {
                       offset={path === 'contact' && !isDesktop ? 600 : isDesktop ? 0 : -90}
                       duration={300}
                       key={name}
+                      href={`/#${path}`}
                       className="relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group opacity-50 hover:opacity-100"
                     >
                       {name}
@@ -70,6 +72,7 @@ const Header = ({ setOverlay }) => {
                 smooth
                 offset={0}
                 duration={300}
+                href="/#contact"
               >
                 <button type="button" className="hidden md:flex font-bold text-palette-5 text-[12px] sm:text-[14px] px-8 py-4 border-[1px] border-palette-5 rounded-full hover:bg-palette-5 hover:text-palette-1/[.85] transition duration-300">
                   GET A FREE QUOTE

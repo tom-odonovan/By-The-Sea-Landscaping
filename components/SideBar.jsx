@@ -29,6 +29,7 @@ const SideBar = ({ active, handleClick }) => {
             smooth
             offset={-150}
             duration={300}
+            href="/#home"
           >
             <img
               src="/Logos/Logo-light.png"
@@ -50,6 +51,7 @@ const SideBar = ({ active, handleClick }) => {
                   offset={path === 'contact' && !isDesktop ? 600 : isDesktop ? 0 : -90}
                   duration={300}
                   key={name}
+                  href={`/#${path}`}
                   className="relative text-left block w-full short:py-4 py-6 pr-full transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group hover:text-black border-b-1 border-black-100"
                 >
                   {name}

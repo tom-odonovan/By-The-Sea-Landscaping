@@ -33,7 +33,7 @@ export const WhyChooseUs = () => {
             className='object-cover w-full h-full'
           />
           <QuoteCard
-            text="Experience the difference of our professional service and have your garden looking its best!"
+            text="Experience the difference our professional service can make and have your garden looking its best!"
           />
         </motion.div>
 

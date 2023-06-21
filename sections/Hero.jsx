@@ -44,6 +44,7 @@ const Hero = () => {
                 offset={path === 'contact' && !isDesktop ? 600 : isDesktop ? 0 : -90}
                 duration={300}
                 key={name}
+                href={`/#${path}`}
               >
                 <button className={styles.heroBtn}>{name}</button>
               </Link>

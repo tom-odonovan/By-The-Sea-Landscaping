@@ -54,6 +54,8 @@ const Footer = () => {
                       smooth
                       offset={path === 'contact' && !isDesktop ? 600 : isDesktop ? 0 : -90}
                       duration={300}
+                      key={name}
+                      href={`/#${path}`}
                       className="relative transition duration-300 cursor-pointer text-palette-5 text-[14px] xl:text-[16px] font-sans group"
                     >
                       {name}
@@ -83,6 +85,7 @@ const Footer = () => {
                     offset={-150}
                     duration={300}
                     key={title}
+                    href="/#services"
                     className="cursor-pointer text-palette-5 text-[14px] xl:text-[16px] font-sans"
                   >
                     {title}

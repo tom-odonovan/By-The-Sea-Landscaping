@@ -30,7 +30,7 @@ const About = () => {
               className='relative w-full lg:max-w-[400px] xl:max-w-[500px] min-h-[600px] h-full object-cover object-cover z-40 lg:rounded-lg shadow-xl'
             />
             <QuoteCard
-              text="Committed to crafting landscapes with precision and care, and fostering connections with nature."
+              text="Committed to crafting landscapes with precision and care, fostering connections with nature."
               styles="lg:hidden"
             />
             <div className='hidden lg:block'>
