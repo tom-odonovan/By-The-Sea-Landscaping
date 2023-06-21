@@ -5,7 +5,6 @@ import { Hero, About, Services, Explore, WhyChooseUs, Blog, Reviews, FollowUs, G
 import { useState } from 'react';
 import { useRef } from 'react';
 
-
 const Page = () => {
 
   const pageRef = useRef();

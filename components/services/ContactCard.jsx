@@ -1,8 +1,8 @@
 'use client';
 
 import { Link } from 'react-scroll';
-import styles from '../../styles';
 import { useMediaQuery } from 'react-responsive';
+import styles from '../../styles';
 
 const ContactCard = () => {
   const isDesktop = useMediaQuery({ minWidth: 1024 });

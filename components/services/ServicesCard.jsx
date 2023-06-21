@@ -21,7 +21,7 @@ const ServicesCard = ({ index, service, active, handleClick }) => (
           alt={service.icon.alt}
           className="w-[70px] h-[70px] object-contain"
         />
-        <p className='min-w-[160px]'>{service.title}</p>
+        <p className="min-w-[160px]">{service.title}</p>
 
       </div>
       <BsArrowRightCircle size={40} className={` ${active === service ? 'text-palette-2' : 'text-gray-200 opacity-30'} opacity-80 hover:scale-110 ${active === service ? 'rotate-90' : ''} transition duration-500`} />

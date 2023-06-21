@@ -12,7 +12,6 @@ const ServiceInfo = ({ active, handleChange }) => {
   });
 
   const activeIndex = services.indexOf(active);
-  console.log(activeIndex);
 
   return (
     <div className="relative z-1 flex flex-col lg:flex-row w-[100vw] h-full lg:h-auto">

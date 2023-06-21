@@ -11,10 +11,10 @@ const SideBar = ({ active, handleClick }) => {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
-    <div className='z-50'>
+    <div className="z-50">
       <div
         style={{ transform: active ? 'translateX(0)' : 'translateX(100%)' }}
-        className={`transition duration-[.6s] ease-in-out p-8 gap-8 flex flex-col fixed top-0 right-0 bg-white w-3/4 sm:w-[350px] h-screen shadow-2xl opacity-100 z-50 overflow-y-auto flex-grow`}
+        className="transition duration-[.6s] ease-in-out p-8 gap-8 flex flex-col fixed top-0 right-0 bg-white w-3/4 sm:w-[350px] h-screen shadow-2xl opacity-100 z-50 overflow-y-auto flex-grow"
       >
         <div className="w-full flex justify-end">
           <button type="button" onClick={() => handleClick()}>
