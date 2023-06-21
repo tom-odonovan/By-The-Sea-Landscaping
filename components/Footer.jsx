@@ -30,7 +30,7 @@ const Footer = () => {
                 const SocialIcon = icon;
 
                 return (
-                  <a href={href} key={name}>
+                  <a href={href} key={name} aria-label={name}>
                     <div key={name} className={`${styles.flexCenter} w-[40px] h-[40px] rounded-full bg-palette-1 border-[1px] border-palette-3 cursor-pointer hover:bg-palette-3 transition duration-300 group`}>
                       <SocialIcon size={20} className="text-palette-3 group-hover:text-palette-1" />
                     </div>

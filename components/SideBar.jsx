@@ -17,7 +17,7 @@ const SideBar = ({ active, handleClick }) => {
         className="transition duration-[.6s] ease-in-out p-8 gap-8 flex flex-col fixed top-0 right-0 bg-white w-3/4 sm:w-[350px] h-screen shadow-2xl opacity-100 z-50 overflow-y-auto flex-grow"
       >
         <div className="w-full flex justify-end">
-          <button type="button" onClick={() => handleClick()}>
+          <button type="button" aria-label="Close menu" onClick={() => handleClick()}>
             <GrClose className="relative left-[2px] -top-[3px] w-[30px] h-[30px] cursor-pointer" />
           </button>
         </div>
@@ -78,7 +78,7 @@ const SideBar = ({ active, handleClick }) => {
             const SocialIcon = icon;
 
             return (
-              <a href={href} key={name}>
+              <a href={href} key={name} aria-label={name}>
                 <div className={`${styles.flexCenter} w-[50px] h-[50px] rounded-full bg-palette-1 border-[1px] border-palette-1 hover:border-palette-1 cursor-pointer hover:bg-white transition duration-300 group`}>
                   <SocialIcon size={20} className="text-white group-hover:text-palette-1" />
                 </div>
@@ -89,7 +89,7 @@ const SideBar = ({ active, handleClick }) => {
 
       </div>
 
-      <button type="button" onClick={() => handleClick()}>
+      <button type="button" aria-label="Menu" onClick={() => handleClick()}>
         <img
           src="/icons/menu.svg"
           alt="menu"

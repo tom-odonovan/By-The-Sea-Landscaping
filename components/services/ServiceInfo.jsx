@@ -35,8 +35,8 @@ const ServiceInfo = ({ active, handleChange }) => {
                         className="w-[70px] h-[70px] object-contain"
                       />
                       <div className="flex flex-col ml-4">
-                        <h4 className="font-bold text-palette-2">{item.subtitle}</h4>
-                        <h3 className="font-bold text-[22px] mobile:text-[28px]">{item.title}</h3>
+                        <h3 className="font-bold text-palette-2">{item.subtitle}</h3>
+                        <h4 className="font-bold text-[22px] mobile:text-[28px]">{item.title}</h4>
                       </div>
                     </div>
                     <div className="flex flex-col gap-4">
