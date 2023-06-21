@@ -3,7 +3,7 @@
 import { useMediaQuery } from 'react-responsive';
 import { motion } from 'framer-motion';
 import styles from '../styles';
-import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
+import { staggerContainer, textVariant } from '../utils/motion'
 import { Link } from 'react-scroll';
 import { heroBtns } from '../constants';
 
@@ -17,9 +17,9 @@ const Hero = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className="2xl:max-w-[1450px] w-full min-h-screen mx-auto flex flex-col justify-end short:justify-center"
+        className="2xl:max-w-[1450px] w-full h-screen min-h-[600px] mx-auto flex flex-col justify-end short:justify-center"
       >
-        <div className='absolute inset-0 w-full min-h-screen bg-hero-cover bg-black/30 bg-blend-multiply bg-cover bg-center'>
+        <div className='absolute inset-0 w-full h-screen min-h-[600px] bg-hero-cover bg-black/30 bg-blend-multiply bg-cover bg-center'>
         </div>
 
         <div className='flex flex-col items-left justify-end gap-10 pb-[200px] relative z-10 short:gap-6 short:pb-0'>

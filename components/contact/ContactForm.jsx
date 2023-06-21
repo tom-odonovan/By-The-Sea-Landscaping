@@ -101,7 +101,7 @@ const ContactForm = () => {
             onSubmit={handleSubmit}
           >
             <div>
-              <div className={`${isSubmitting && 'opacity-30'} flex flex-row flex-wrap pt-12 gap-6 gap-y-10 transition duration-300`}>
+              <div className={`${isSubmitting && 'opacity-30'} flex flex-row flex-wrap pt-12 gap-6 gap-y-8 lg:gap-y-10 transition duration-300`}>
                 <FormInput
                   id="name"
                   type="text"

@@ -9,11 +9,13 @@ import ServiceInfo from './services/ServiceInfo';
 import BlogCard from './BlogCard';
 import BackToTop from './BackToTop';
 import Footer from './Footer';
+import QuoteCard from './QuoteCard';
 
 export {
   Header,
   TitleText,
   TypingText,
+  QuoteCard,
   ServicesCard,
   Carousel,
   ContactCard,

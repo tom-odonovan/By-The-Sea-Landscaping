@@ -49,7 +49,7 @@ export const services = [
       img: '/icons/mower-icon.svg',
       alt: 'Mower Icon',
     },
-    img: '/imgs/mowing-man.jpg',
+    img: '/imgs/mowing-man-wf.jpg',
     alt: 'Man mowing lawn',
     subtitle: 'Transform Your Space',
     title: 'Landscaping Services',

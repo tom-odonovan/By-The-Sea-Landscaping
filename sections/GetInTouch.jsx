@@ -9,7 +9,7 @@ import ContactForm from "../components/contact/ContactForm";
 import ContactDetails from "../components/contact/ContactDetails";
 
 const GetInTouch = () => (
-    <section className='flex flex-col items-center bg-palette-5 sm:bg-palette-4 pt-[100px] sm:pb-[200px]' id='contact'>
+    <section className='flex flex-col items-center bg-palette-5 sm:bg-palette-4 pt-[100px] md:pb-[200px]' id='contact'>
         <motion.div
             variants={staggerContainer}
             initial="hidden"
