@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 // Source: https://www.codemzy.com/blog/react-hook-scroll-direction-event-listener
 export function useScrollDirection() {
-  const [scrollDirection, setScrollDirection] = useState(null);
+  const [scrollDirection, setScrollDirection] = useState('up');
 
   useEffect(() => {
     let initialYOffset = window.pageYOffset;
