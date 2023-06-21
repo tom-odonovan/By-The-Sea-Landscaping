@@ -3,7 +3,7 @@
 import { useMediaQuery } from 'react-responsive';
 import { motion } from 'framer-motion';
 import styles from '../styles';
-import { TitleText, TypingText } from '../components';
+import { TitleText, TypingText, QuoteCard } from '../components';
 import Guarantee from '../components/Guarantee';
 import { staggerContainer, fadeIn } from '../utils/motion'
 import { guarantee } from '../constants';
@@ -25,12 +25,15 @@ export const WhyChooseUs = () => {
 
         <motion.div
           variants={isDesktop ? fadeIn('up', 'tween', 0.2, 1) : fadeIn('right', 'tween', 0.2, 1)}
-          className={`w-full lg:w-1/2 h-[600px] lg:h-full xl:rounded-l-lg overflow-hidden`}
+          className={`relative w-full lg:w-1/2 h-[600px] lg:h-full xl:rounded-l-lg overflow-hidden`}
         >
           <img
             src="/imgs/pruning.jpg"
             alt='Poolside'
             className='object-cover w-full h-full'
+          />
+          <QuoteCard
+            text="Experience the difference of our professional service and have your garden looking its best!"
           />
         </motion.div>
 

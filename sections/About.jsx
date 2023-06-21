@@ -2,13 +2,12 @@
 
 import { useMediaQuery } from 'react-responsive';
 import { motion } from 'framer-motion';
-import { TypingText, TitleText } from '../components';
+import { TypingText, TitleText, QuoteCard } from '../components';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion'
 
 const About = () => {
-
-  const smallMobile = useMediaQuery({ maxWidth: 320 })
+  const isMobile = useMediaQuery({ maxWidth: 480 })
   const isDesktop = useMediaQuery({ maxWidth: 1024 })
 
   return (
@@ -17,7 +16,7 @@ const About = () => {
         variants={staggerContainer}
         initial='hidden'
         whileInView='show'
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.1 }}
         className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col gap-12`}
       >
         <div className='flex flex-col-reverse lg:flex-row gap-8 lg:gap-40 mt-[50px] w-fit h-fit'>
@@ -29,6 +28,10 @@ const About = () => {
               src='/imgs/hedge-trimming-2.jpg'
               alt='2 men trimming hedges'
               className='relative w-full lg:max-w-[400px] xl:max-w-[500px] min-h-[600px] h-full object-cover object-cover z-40 lg:rounded-lg shadow-xl'
+            />
+            <QuoteCard
+              text="Committed to crafting landscapes with precision and care, and fostering connections with nature."
+              styles="lg:hidden"
             />
             <div className='hidden lg:block'>
               <div className='absolute -top-[50px] -left-[50px] h-full w-full bg-palette-1 shadow-2xl z-0' />
@@ -42,7 +45,7 @@ const About = () => {
             className='px-6 lg:px-0 lg:py-12 flex flex-col justify-center items-start gap-12 lg:mt-[50px] flex-1'
           >
             <motion.div
-              variants={smallMobile ? fadeIn('up', 'tween', 0.2, 1) : fadeIn('left', 'tween', 0.2, 1)}
+              variants={isMobile ? fadeIn('up', 'tween', 0.2, 1) : fadeIn('left', 'tween', 0.2, 1)}
               className='flex flex-col items-start'
             >
               <TypingText title='| About Us' textStyles='text-center' />
