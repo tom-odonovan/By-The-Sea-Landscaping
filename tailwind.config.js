@@ -44,11 +44,10 @@ module.exports = {
         abril: ['Abril Fatface', 'Arial', 'cursive'],
       },
      backgroundImage: {
-        'hero-pattern': "url('/hero-pattern-5.png')",
-        'hero-pattern-2': "url('/hero-pattern-10.png')",
-        'hero-cover': "url('/imgs/mowing-man.jpg')",
-        'about': "url('/imgs/hedge-trimming-2.jpg')",
-        'contact': "url('/imgs/contact-bg.jpg')",
+       'hero-pattern': ["url('/imgs/hero-pattern-5.webp')", "url('/imgs/hero-pattern-5.png')"],
+       'hero-cover': ["url('/imgs/mowing-man.webp')", "url('/imgs/mowing-man.jpg')"],
+       'about': ["url('/imgs/hedge-trimming-2.webp')", "url('/imgs/hedge-trimming-2.jpg')"],
+       'contact': ["url('/imgs/contact-bg.webp')", "url('/imgs/contact-bg.jpg')"],
       },
     },
     borderWidth: {

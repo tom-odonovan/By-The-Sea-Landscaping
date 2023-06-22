@@ -8,7 +8,6 @@ const Picture = ({ avif, webp, src, alt, className }) => {
         alt={alt}
         className={className}
         loading='lazy'
-        decoding='async'
       />
     </picture>
   );

@@ -15,7 +15,7 @@ const ContactCard = () => {
         className="w-[70px] h-[70px] object-contain"
       />
       <h3 className="text-[22px] sm:text-[28px] font-sans-bold">Ready To Get Started?</h3>
-      <p className="text-[16px]">Get in touch today for a free quote and consoltation</p>
+      <p className="text-[16px]">Get in touch today for a free quote and consultation</p>
       <Link
         activeClass="active"
         to="contact"

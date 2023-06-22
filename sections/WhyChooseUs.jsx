@@ -3,7 +3,7 @@
 import { useMediaQuery } from 'react-responsive';
 import { motion } from 'framer-motion';
 import styles from '../styles';
-import { TitleText, TypingText, QuoteCard } from '../components';
+import { TitleText, TypingText, QuoteCard, Picture } from '../components';
 import Guarantee from '../components/Guarantee';
 import { staggerContainer, fadeIn } from '../utils/motion'
 import { guarantee } from '../constants';
@@ -27,10 +27,11 @@ export const WhyChooseUs = () => {
           variants={isDesktop ? fadeIn('up', 'tween', 0.2, 1) : fadeIn('right', 'tween', 0.2, 1)}
           className={`relative w-full lg:w-1/2 h-[600px] lg:h-full xl:rounded-l-lg overflow-hidden`}
         >
-          <img
+          <Picture
+            webp="/imgs/pruning.webp"
             src="/imgs/pruning.jpg"
-            alt='Poolside'
-            className='object-cover w-full h-full'
+            alt="Man pruning tree"
+            className="object-cover w-full h-full"  
           />
           <QuoteCard
             text="Experience the difference our professional service can make and have your garden looking its best!"

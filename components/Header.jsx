@@ -54,7 +54,7 @@ const Header = ({ setOverlay }) => {
                       duration={300}
                       key={name}
                       href={`/#${path}`}
-                      className="relative py-8 transition duration-300 cursor-pointer font-bold text-[15px] xl:text-[18px] font-sans group opacity-50 hover:opacity-100"
+                      className="relative py-8 transition duration-300 cursor-pointer text-[15px] xl:text-[18px] font-sans group "
                     >
                       {name}
                       <div className="absolute bottom-7 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full" />

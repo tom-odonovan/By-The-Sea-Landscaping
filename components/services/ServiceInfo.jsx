@@ -2,7 +2,7 @@
 
 import { useSwipeable } from 'react-swipeable';
 import Carousel from './Carousel';
-import ContactCard from './ContactCard';
+import { ContactCard, Picture } from '../';
 import { services } from '../../constants';
 
 const ServiceInfo = ({ active, handleChange }) => {
@@ -61,8 +61,9 @@ const ServiceInfo = ({ active, handleChange }) => {
         </div>
       </div>
       <div className="relative w-full lg:w-1/3 h-[600px] lg:h-auto">
-        <img
-          src={active.img}
+        <Picture
+          webp={`${active.img}.webp`}
+          src={`${active.img}.jpg`}
           alt={active.alt}
           className="object-cover w-full h-full brightness-60"
         />

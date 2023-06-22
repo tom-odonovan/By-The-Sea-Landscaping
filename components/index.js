@@ -10,6 +10,7 @@ import BlogCard from './BlogCard';
 import BackToTop from './BackToTop';
 import Footer from './Footer';
 import QuoteCard from './QuoteCard';
+import Picture from './Picture';
 
 export {
   Header,
@@ -25,4 +26,5 @@ export {
   BlogCard,
   BackToTop,
   Footer,
+  Picture,
 };

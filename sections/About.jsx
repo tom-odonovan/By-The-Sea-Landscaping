@@ -2,7 +2,7 @@
 
 import { useMediaQuery } from 'react-responsive';
 import { motion } from 'framer-motion';
-import { TypingText, TitleText, QuoteCard } from '../components';
+import { TypingText, TitleText, QuoteCard, Picture } from '../components';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion'
 
@@ -19,15 +19,16 @@ const About = () => {
         viewport={{ once: true, amount: 0.1 }}
         className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col gap-12`}
       >
-        <div className='flex flex-col-reverse lg:flex-row gap-8 lg:gap-40 mt-[50px] w-fit h-fit'>
+        <div className='flex flex-col-reverse lg:items-center lg:flex-row gap-8 lg:gap-[100px] xl:gap-40 mt-[50px] w-fit h-fit'>
           <motion.div
             variants={isDesktop ? fadeIn('up', 'tween', 0.1, 1) : fadeIn('right', 'tween', 0.1, 1)}
-            className='relative z-50'
+            className='relative z-50 h-[600px] xl:h-[700px] 2xl:h-[800px]'
           >
-            <img
-              src='/imgs/hedge-trimming-2.jpg'
-              alt='2 men trimming hedges'
-              className='relative w-full lg:max-w-[400px] xl:max-w-[500px] min-h-[600px] h-full object-cover object-cover z-40 lg:rounded-lg shadow-xl'
+            <Picture
+              webp="/imgs/hedge-trimming-2.webp"
+              src="/imgs/hedge-trimming-2.jpg"
+              alt="2 men trimming hedge"
+              className="relative w-full lg:max-w-[400px] xl:max-w-[500px] min-h-[600px] h-full object-cover object-cover z-40 lg:rounded-lg shadow-xl"
             />
             <QuoteCard
               text="Committed to crafting landscapes with precision and care, fostering connections with nature."
@@ -42,7 +43,7 @@ const About = () => {
 
           <motion.div
             variants={isDesktop ? fadeIn('up', 'tween', 0.1, 1) : fadeIn('left', 'tween', 0.1, 1)}
-            className='px-6 lg:px-0 lg:py-12 flex flex-col justify-center items-start gap-12 lg:mt-[50px] flex-1'
+            className='px-6 sm:px-16 lg:px-0 sm:py-12 flex flex-col justify-center items-start gap-12 flex-1'
           >
             <motion.div
               variants={isMobile ? fadeIn('up', 'tween', 0.2, 1) : fadeIn('left', 'tween', 0.2, 1)}
