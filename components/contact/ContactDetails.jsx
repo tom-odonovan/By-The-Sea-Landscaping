@@ -5,7 +5,7 @@ import Picture from '../Picture';
 
 const ContactDetails = () => (
   <div className="px-8 py-20 sm:p-20 leading-8 w-full lg:w-1/2 text-white flex flex-col relative">
-    <Picture 
+    <Picture
       webp="/imgs/contact-bg.webp"
       src="/imgs/contact-bg.jpg"
       alt="Contact background"

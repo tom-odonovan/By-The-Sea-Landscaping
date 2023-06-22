@@ -2,7 +2,8 @@
 
 import { useSwipeable } from 'react-swipeable';
 import Carousel from './Carousel';
-import { ContactCard, Picture } from '../';
+import ContactCard from './ContactCard';
+import Picture from '../Picture';
 import { services } from '../../constants';
 
 const ServiceInfo = ({ active, handleChange }) => {
