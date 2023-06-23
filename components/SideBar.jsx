@@ -34,7 +34,8 @@ const SideBar = ({ active, handleClick }) => {
             <img
               src="/Logos/Logo-light.png"
               alt="logo"
-              className="relative w-[200px] cursor-pointer"
+              className="relative w-[200px] h-[120px] cursor-pointer"
+              loading="lazy"
             />
           </Link>
         </div>

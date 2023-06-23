@@ -18,7 +18,8 @@ const Footer = () => {
             <img
               src="/Logos/Logo-dark.png"
               alt="logo"
-              className="w-[200px] object-contain"
+              className="w-[200px] h-[120px] object-contain"
+              loading="lazy"
             />
           </div>
 
