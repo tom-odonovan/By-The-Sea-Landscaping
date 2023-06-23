@@ -129,27 +129,27 @@ export const guarantee = [
 export const latestProjects = [
   {
     id: 'project-1',
-    imgUrl: '/imgs/project-1.jpeg',
+    imgUrl: '/imgs/projects/unknown-03.jpg',
     title: 'Narrabeen',
   },
   {
     id: 'project-2',
-    imgUrl: '/imgs/project-2.jpeg',
+    imgUrl: '/imgs/projects/unknown-02.jpg',
     title: 'Newport',
   },
   {
     id: 'project-3',
-    imgUrl: '/imgs/project-3.jpeg',
-    title: 'Palm Beach',
+    imgUrl: '/imgs/projects/elanora-02.jpeg',
+    title: 'Elanora',
   },
   {
     id: 'project-4',
-    imgUrl: '/imgs/project-4.jpeg',
+    imgUrl: '/imgs/projects/monavale.jpg',
     title: 'Monavale',
   },
   {
     id: 'project-5',
-    imgUrl: '/imgs/project-5.jpeg',
+    imgUrl: '/imgs/projects/unknown-01.jpg',
     title: 'Church Point',
   },
 ];
