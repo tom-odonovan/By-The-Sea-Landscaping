@@ -4,6 +4,7 @@ import { Header, Footer, BackToTop } from '../components';
 import { Hero, About, Services, Explore, WhyChooseUs, Blog, Reviews, FollowUs, GetInTouch } from '../sections';
 import { useState } from 'react';
 import { useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 const Page = () => {
 
@@ -28,6 +29,7 @@ const Page = () => {
         {/* <FollowUs /> */}
         <BackToTop pageRef={pageRef} />
         <Footer />
+        <Analytics />
       </div>
     </div>
   )
