@@ -68,7 +68,7 @@ const About = () => {
               </p>
             </div>
 
-            <button className={`${styles.heroBtn} bg-palette-1 hover:border-palette-1`}>Learn More</button>
+            {/* <button className={`${styles.heroBtn} bg-palette-1 hover:border-palette-1`}>Learn More</button> */}
 
           </motion.div>
         </div>
