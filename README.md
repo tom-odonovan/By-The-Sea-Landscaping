@@ -5,9 +5,8 @@
 This repository contains the code for a small landscaping business website built using React, Next.js, Tailwind, and Framer Motion. The website aims to showcase the services offered by the landscaping business and provide information to potential clients.
 </br>
 
-## 
 
-<div align="center" height='1000px' style="display: flex; flex-wrap: wrap; justify-content: center; overflow-y: scroll;">
+<div align="center" width='100%' height='1000px' style="display: flex; flex-wrap: wrap; justify-content: center; overflow-y: scroll;">
     </br>
     <img height='auto' width='100%' src="./public/screenshots/hero-sc.png" alt="Website cover screenshot" /> 
     <img height='auto' width='100%' src="./public/screenshots/about-sc.png" alt="About section screenshot" /> 
@@ -48,7 +47,7 @@ The client's requirements were to create a modern and responsive website that ef
 
 - **Responsive Design:** The website is designed to provide an optimal viewing experience across various devices, including desktops, tablets, and mobile phones.
 
-- **Modular Sections and Components:** The website is organized into several sections, including a hero section, about section, services section, blog section, and more. Each section is implemented as a reusable component to maintain code modularity.
+- **Modular Sections and Components:** The website is organized into several sections, including a hero section, about section, services section, projects section, and more. Each section is implemented as a reusable component to maintain code modularity.
 
 - **Contact Form:** A contact form is provided to allow visitors to get in touch with the landscaping business directly. The form includes fields for name, email, subject, and message, enhancing communication with potential clients.
 
@@ -98,7 +97,7 @@ Feedback and suggestions for this project is welcome. If you find any issues or 
 
 ## Acknowlegements 
 
-- [By The Sea Landscaping](#) 
+- [By The Sea Landscaping](https://bythesealandscapes.com) 
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -107,6 +106,7 @@ Feedback and suggestions for this project is welcome. If you find any issues or 
 - [Yup](https://www.npmjs.com/package/yup)
 - [Express](https://expressjs.com/)
 - [Nodemailer](https://nodemailer.com/about/)
+- [Vercel](https://vercel.com/)
 
 ## Getting Started
 
@@ -142,4 +142,4 @@ Feedback and suggestions for this project is welcome. If you find any issues or 
 
 ## Licence 
 
-This project is licensed under the [https://opensource.org/license/mit/](MIT License).
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
