@@ -1,5 +1,3 @@
-'use client';
-
 import { contact } from '../../constants';
 import Picture from '../Picture';
 

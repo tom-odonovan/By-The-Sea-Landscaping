@@ -1,12 +1,7 @@
-'use client';
-
-
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn } from '../utils/motion'
 import styles from '../styles';
-import { TypingText, TitleText } from "../components";
-import ContactForm from "../components/contact/ContactForm";
-import ContactDetails from "../components/contact/ContactDetails";
+import { TypingText, TitleText, ContactDetails, ContactForm } from "../components";
 
 const GetInTouch = () => (
     <section className='flex flex-col items-center bg-palette-5 sm:bg-palette-4 pt-[100px] md:pb-[200px]' id='contact'>

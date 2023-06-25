@@ -1,5 +1,3 @@
-'use client';
-
 import { Link } from 'react-scroll';
 import { useMediaQuery } from 'react-responsive';
 import styles from '../../styles';

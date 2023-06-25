@@ -1,5 +1,3 @@
-'use client';
-
 import { useState, useLayoutEffect } from 'react';
 import { BsArrowUp } from 'react-icons/bs';
 import { motion, AnimatePresence } from 'framer-motion';
