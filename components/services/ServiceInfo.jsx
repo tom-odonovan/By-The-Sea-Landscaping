@@ -7,11 +7,11 @@ const ServiceInfo = ({ active, handleChange }) => {
   const activeIndex = services.indexOf(active);
 
   return (
-    <div className="relative z-1 flex flex-col lg:flex-row w-[100vw] h-full lg:h-auto">
+    <div className="relative z-1 flex flex-col lg:flex-row w-[100vw] h-full max-h-[800px] lg:h-auto">
       <div className="bg-white bg-hero-pattern w-full lg:w-2/3 flex flex-col items-center justify-center lg:items-end">
         <div className="flex flex-row py-12 lg:pr-[150px] mt-12">
           <div className="hidden xl:block h-full w-[1px] bg-palette-2" />
-          <Carousel 
+          <Carousel
             items={services}
             activeItem={active}
             activeIndex={activeIndex}

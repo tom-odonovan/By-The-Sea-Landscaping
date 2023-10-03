@@ -21,7 +21,7 @@ const Explore = () => {
       >
         <TypingText title='| Explore' textStyles='text-center' />
         <TitleText title='Latest Projects' textStyles='text-center' />
-        <div className='mt-[70px] flex lg:flex-row flex-col h-full min-h-[1000px] lg:h-[70vh] lg:min-h-[450px] gap-2 xl:gap-4'>
+        <div className='mt-[70px] flex lg:flex-row flex-col h-full min-h-[1000px] max-h-[1000px] lg:h-[70vh] lg:min-h-[450px] gap-2 xl:gap-4'>
           {latestProjects.map((project, index) => (
             <ExploreCard
               key={project.id}
