@@ -14,9 +14,9 @@ const Footer = () => {
         <div className="flex flex-row flex-wrap justify-start md:justify-center px-8 py-[50px] lg:py-[100px] gap-[50px] max-w-full md:w-[870px] min-[1650px]:w-full">
           <div className="flex flex-row items-center pb-12 pr-[30px]">
             <img
-              src="/Logos/Logo-dark.png"
+              src="/Logos/Logo-light.svg"
               alt="logo"
-              className="w-[200px] h-[120px] object-contain"
+              className="w-[210px] object-contain"
               loading="lazy"
             />
           </div>

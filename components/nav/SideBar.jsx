@@ -32,7 +32,7 @@ const SideBar = ({ active, handleClick }) => {
             href="/#home"
           >
             <img
-              src="/Logos/Logo-light.png"
+              src="/Logos/Logo-dark.svg"
               alt="logo"
               className="relative w-[200px] h-[120px] cursor-pointer"
               loading="lazy"
