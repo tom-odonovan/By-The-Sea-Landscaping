@@ -12,11 +12,11 @@ const Footer = () => {
 
       <div className="mx-auto flex flex-col gap-8 items-center justify-between">
         <div className="flex flex-row flex-wrap justify-start md:justify-center px-8 py-[50px] lg:py-[100px] gap-[50px] max-w-full md:w-[870px] min-[1650px]:w-full">
-          <div className="flex flex-row items-center pb-12 pr-[30px]">
+          <div className="flex items-center pr-[30px]">
             <img
               src="/Logos/Logo-light.svg"
               alt="logo"
-              className="w-[210px] object-contain"
+              className="w-[250px] object-contain"
               loading="lazy"
             />
           </div>

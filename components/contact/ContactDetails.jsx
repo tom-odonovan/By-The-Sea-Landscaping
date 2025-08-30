@@ -7,13 +7,21 @@ const ContactDetails = () => (
       webp="/imgs/contact-bg.webp"
       src="/imgs/contact-bg.jpg"
       alt="Contact background"
-      className="absolute inset-0 w-full h-full object-cover brightness-75"
+      className="absolute inset-0 w-full h-full object-cover brightness-50"
     />
-    <div className="z-10">
+    <div className="z-10 flex flex-col gap-12">
       <h3 className="font-sans text-[28px] sm:text-[36px] text-white pb-6 border-b-[1px] border-white/70">
         Contact Us
       </h3>
-      <div className="flex flex-col justify-center gap-8 mt-8 lg:mt-[100px]">
+      <div className="flex items-center justify-center">
+        <img
+          src="/Logos/Logo-light.svg"
+          alt="logo"
+          className="w-[250px] object-contain"
+          loading="lazy"
+        />
+      </div>
+      <div className="flex flex-col justify-center gap-8">
         {contact.map(({ name, icon, content, url }) => {
           const ContactIcon = icon;
 

@@ -6,7 +6,7 @@ const ContactCard = () => {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
-    <div className={`${styles.flexCenter} px-8 absolute top-1/2 lg:top-1/2 -translate-y-1/2 lg:-translate-y-1/2 right-1/2 lg:right-full translate-x-1/2 lg:translate-x-1/2 w-[250px] sm:w-[300px] h-fit py-6 bg-palette-2 rounded-md text-white flex flex-col gap-5 text-center shadow-2xl z-5 transition duration-500`}>
+    <div className={`${styles.flexCenter} px-8 absolute top-1/2 lg:top-1/2 -translate-y-1/2 lg:-translate-y-1/2 right-1/2 lg:right-full translate-x-1/2 lg:translate-x-1/2 w-[250px] sm:w-[300px] h-fit py-6 bg-palette-2 rounded-md text-white flex flex-col gap-5 text-center shadow-dark z-5 transition duration-500`}>
       <img
         src="/icons/leaf-icon.svg"
         alt="Leaf Icon"

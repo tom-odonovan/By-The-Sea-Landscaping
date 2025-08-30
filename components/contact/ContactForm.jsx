@@ -52,7 +52,7 @@ const ContactForm = () => {
   });
 
   return (
-    <div className="relative flex flex-col px-8 py-20 sm:px-20 lg:px-12 xl:px-20 leading-8 w-full max-w-[700px] bg-white">
+    <div className="relative flex flex-col px-8 py-20 sm:px-20 lg:px-16 xl:px-20 leading-8 w-full max-w-[700px] bg-white">
       {submitted ? (
 
       // Display message confirmation on submit
@@ -151,7 +151,7 @@ const ContactForm = () => {
                   touched={touched.message}
                 />
               </div>
-              <button type="submit" className={`${styles.flexCenter} flex-row gap-2 font-sans bg-palette-1/90 border-[3px] border-palette-1 text-white text-xl rounded-lg mt-6 px-8 h-[60px] py-4 w-full transition duration-300 ${(!isValid && touched.name) || isSubmitting ? 'cursor-default opacity-50' : 'opacity-100 hover:bg-white hover:text-palette-2 hover:border-palette-2 active:scale-95'}`}>
+              <button type="submit" className={`${styles.flexCenter} flex-row gap-2 font-sans bg-palette-1/90 border-[3px] border-palette-1 text-white text-xl rounded-lg mt-6 px-8 h-[60px] py-4 w-full transition duration-300 ${(!isValid && touched.name) || isSubmitting ? 'cursor-default opacity-50' : 'opacity-[85%] hover:opacity-100 hover:shadow-lg'}`}>
                 {isSubmitting ? (
                   <svg width="35" height="35" stroke="#C8E4D6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <g>

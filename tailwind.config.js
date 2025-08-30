@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './app/**/*.{html,js,jsx}',
     './components/**/*.{html,js,jsx}',
+    './utils/**/*.{js,jsx}',
     './sections/**/*.{html,js,jsx}',
     './styles/**/*.{js,jsx}',
   ],
@@ -43,11 +44,15 @@ module.exports = {
         lato: ['Lato', 'Arial', 'sans-serif'],
         abril: ['Abril Fatface', 'Arial', 'cursive'],
       },
-     backgroundImage: {
-       'hero-pattern': ["url('/imgs/hero-pattern-5.webp')", "url('/imgs/hero-pattern-5.png')"],
-       'hero-cover': ["url('/imgs/mowing-man.webp')", "url('/imgs/mowing-man.jpg')"],
-       'about': ["url('/imgs/hedge-trimming-2.webp')", "url('/imgs/hedge-trimming-2.jpg')"],
-       'contact': ["url('/imgs/contact-bg.webp')", "url('/imgs/contact-bg.jpg')"],
+      backgroundImage: {
+        'hero-pattern': ["url('/imgs/hero-pattern-5.webp')", "url('/imgs/hero-pattern-5.png')"],
+        'hero-cover': ["url('/imgs/mowing-man.webp')", "url('/imgs/mowing-man.jpg')"],
+        'about': ["url('/imgs/hedge-trimming-2.webp')", "url('/imgs/hedge-trimming-2.jpg')"],
+        'contact': ["url('/imgs/contact-bg.webp')", "url('/imgs/contact-bg.jpg')"],
+      },
+      boxShadow: {
+        'white': '0 4px 20px 5px rgba(255, 255, 255, 0.05)',
+        'dark': '0 4px 30px 5px rgba(0, 0, 0, 0.5)',
       },
     },
     borderWidth: {
