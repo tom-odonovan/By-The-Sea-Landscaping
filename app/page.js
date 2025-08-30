@@ -24,7 +24,7 @@ const Page = () => {
         <WhyChooseUs /> 
         <Explore />
         {/* <Blog /> */}
-        {/* <Reviews /> */}
+        <Reviews />
         <GetInTouch />
         {/* <FollowUs /> */}
         <BackToTop pageRef={pageRef} />

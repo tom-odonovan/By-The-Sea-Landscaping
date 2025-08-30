@@ -4,7 +4,7 @@ import { TypingText, TitleText } from './CustomTexts';
 import QuoteCard from './QuoteCard';
 import ServicesCard from './services/ServicesCard';
 import ServiceInfo from './services/ServiceInfo';
-import Carousel from './services/Carousel';
+import Carousel from './Carousel';
 import ContactCard from './services/ContactCard';
 import Guarantee from './Guarantee';
 import ExploreCard from './ExploreCard';
@@ -14,6 +14,11 @@ import BlogCard from './BlogCard';
 import BackToTop from './BackToTop';
 import Footer from './nav/Footer';
 import Picture from './Picture';
+import ReviewCard from './reviews/ReviewCard';
+import ReviewsCarousel from './reviews/ReviewsCarousel';
+import Avatar from './Avatar/Avatar';
+import Card from './Containers/Card/Card';
+import StarRating from './reviews/StarRating';
 
 export {
   Header,
@@ -33,4 +38,9 @@ export {
   BackToTop,
   Footer,
   Picture,
+  ReviewCard,
+  ReviewsCarousel,
+  Avatar,
+  Card,
+  StarRating,
 };

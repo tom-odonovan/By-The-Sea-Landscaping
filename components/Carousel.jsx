@@ -1,7 +1,14 @@
 import { useSwipeable } from 'react-swipeable';
 
 const Carousel = (props) => {
-  const { items, activeItem, activeIndex, handleChange, containerStyles } = props;
+  const {
+    items,
+    activeItem,
+    activeIndex,
+    handleChange,
+    containerStyles,
+  } = props;
+
   const handlers = useSwipeable({
     onSwipedLeft: () => handleChange('right'),
     onSwipedRight: () => handleChange('left'),
@@ -16,7 +23,7 @@ const Carousel = (props) => {
             <div
               key={i}
               style={{ transform: `translateX(calc(-1 * ${activeIndex} * 100%))` }}
-              className="flex flex-col justify-center min-w-[90vw] sm:min-w-[80vw] lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] px-2 gap-8 px-0 lg:px-16 transition duration-500"
+              className="flex flex-col justify-center min-w-[90vw] sm:min-w-[80vw] lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] px-2 gap-8 lg:px-16 transition duration-500"
             >
               <div className="flex small-mobile:flex-row items-center w-full">
                 <img
@@ -46,7 +53,7 @@ const Carousel = (props) => {
 
       <div className="lg:hidden flex flex-row mt-4 gap-2 items-center justify-center">
         {items.map((item, index) => (
-          <div className={`${activeItem === item ? 'bg-gray-500' : 'bg-gray-300'} h-2 w-2 rounded-full transition duration-500`} key={index} />
+          <div className={`${activeItem === item ? 'bg-gray-500 transform scale-[1.4]' : 'bg-gray-300'} h-2 w-2 rounded-full transition duration-500`} key={index} />
         ))}
       </div>
     </div>
