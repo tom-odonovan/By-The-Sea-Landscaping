@@ -1,8 +1,9 @@
+'use client';
+
 /* eslint-disable import/no-unresolved */
 import React, { useState, useRef } from 'react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
