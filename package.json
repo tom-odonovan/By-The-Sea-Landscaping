@@ -9,19 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.7",
+    "@mui/material": "^5.15.7",
     "@tailwindcss/forms": "^0.5.3",
     "@vercel/analytics": "^1.0.1",
+    "date-fns": "^3.6.0",
     "eslint-config-next": "13.0.3",
     "formik": "^2.4.0",
     "framer-motion": "^7.6.7",
+    "lodash": "^4.17.21",
     "next": "13.0.3",
     "nodemailer": "^6.9.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
+    "react-icons": "^5.0.1",
     "react-responsive": "^9.0.2",
     "react-scroll": "^1.8.9",
     "react-swipeable": "^7.0.1",
+    "swiper": "^11.1.14",
     "yup": "^1.2.0"
   },
   "devDependencies": {
