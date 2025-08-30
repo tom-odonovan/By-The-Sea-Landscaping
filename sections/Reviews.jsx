@@ -17,7 +17,7 @@ const Reviews = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`w-full max-w-screen-xl h-fit mx-auto flex flex-col`}
+        className={`w-screen h-fit mx-auto flex flex-col`}
       >
         <TypingText title='| Testimonials' textStyles='text-center text-palette-5' />
         <TitleText title='What Our Clients Say' textStyles='text-center text-palette-5' />
