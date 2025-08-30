@@ -154,6 +154,88 @@ export const latestProjects = [
   },
 ];
 
+export const reviews = [
+  {
+    id: "review-1",
+    avatar: "",
+    name: "Sue Skippen",
+    date: "2025-08-08T00:00:00.000Z",
+    content: `"Jake and his team did an amazing job totally revamping our property to get it ready for sale. We were so impressed and they were so professional we could not be happier and would not have any hesitation in recommending Jake to anyone requiring his services."`,
+    rating: 5,
+  },
+  {
+    id: "review-2",
+    avatar: "",
+    name: "Taylor Grogin",
+    date: "2024-12-08T00:00:00.000Z",
+    content: `"Jake and his team did an exceptional job replacing a patch of turf in my yard back in May. The area needed more than just a simple turf replacement—because of a land drop, they had to raise and level the underlay. I know this couldn’t have been easy with the incline, but they handled it seamlessly.\n\Even with the cooler weather when they laid it, the lawn took to the ground quickly and rooted well within just a few weeks. Now that we’re into warmer weather, I can see the full results, and the entire lawn looks fluid, lush, and healthy.\n\nIt was a no-fuss job at a fair price, and the results speak for themselves. Thank you, Jake and team, for your hard work! Highly recommended."`,
+    rating: 5,
+  },
+  {
+    id: "review-3",
+    avatar: "",
+    name: "John Miller",
+    date: "2024-07-14T00:00:00.000Z",
+    content: `"Jake and the guys at By The Sea Landscaping did an amazing job of installing our new poolside garden beds. They firstly provided great advice about our project, plant choices and all other considerations. Their quote was reasonable and exactly as explained. And the installation itself was swift, professional and seamless. Aside from all else, they are just bloody good blokes. I\'ll be using By The Sea again for any future landscaping projects - and wholeheartedly recommend their services to anyone needing a well-priced garden project, expertly delivered. Thanks Jake and team!"`,
+    rating: 5,
+  },
+  {
+    id: "review-4",
+    avatar: "",
+    name: "Dani",
+    date: "2023-09-20T00:00:00.000Z",
+    content: `"Jake and his team of landscapers worked tirelessly and quickly to remove the Lantana from the backyard of our new home. He then created a beautiful hedge of Lilly Pilly trees with a built in irrigation system. He made a rockery around our large Norfolk Pine tree and planted some hardy plants to withstand the coastal conditions. He still comes back and maintains our hedges every few months for us! We couldnt be happier with the work done by By the Sea Landscaping and highly recommend them to anyone requiring landscaping/hedging/garden makeover. Thanks again Jake."`,
+    rating: 5,
+  },
+  {
+    id: "review-5",
+    avatar: "",
+    name: "Tom Culver",
+    date: "2024-02-12T00:00:00.000Z",
+    content: `"These guys are the best. We've been though a bunch of different companies over the year but have never found one that can deliver to the right standard. Jake and his team are great all round - accurate, friendly, hard working and know their stuff! Highly recommend."`,
+    rating: 5,
+  },
+  {
+    id: "review-6",
+    avatar: "",
+    name: "Rebecca Santos",
+    date: "2024-01-06T00:00:00.000Z",
+    content: `"The most amazing team - hardworking, friendly, considered and thorough. Absolutely old school work ethic and a real pleasure to meet and have help fix up my garden. Hire them, you wont regret it!"`,
+    rating: 5,
+  },
+  { id: "review-7",
+    avatar: "",
+    name: "Sandy Peacock",
+    date: "2024-05-07T00:00:00.000Z",
+    content: `"Best thing we ever did was hand over the garden to By The Sea. Jake and his crew are knowledgeable, energetic and thorough. They look after lawnmowing, tree trimming, pest treatment and other maintenance. And I don't have to go up ladders anymore!"`,
+    rating: 5,
+  },
+  {
+    id: "review-8",
+    avatar: "",
+    name: "Casey O'Brien",
+    date: "2023-08-26T00:00:00.000Z",
+    content: `"Highly recommend By the Sea Landscaping! Jake and his team pulled up some pavers and laid grass for us, they were very efficient and professional!"`,
+    rating: 5,
+  },
+  {
+    id: "review-9",
+    avatar: "",
+    name: "Mia",
+    date: "2024-05-20T00:00:00.000Z",
+    content: `"Jake and his team offer a very professional service and are extremely efficient with attention to detail. Highly recommend."`,
+    rating: 5,
+  },
+  {
+    id: "review-10",
+    avatar: "",
+    name: "Martin Jakovics",
+    date: "2024-05-10T00:00:00.000Z",
+    content: `"Jake and his team do a great job keeping our garden looking good."`,
+    rating: 5,
+  },
+];
+
 export const blog = [
   {
     id: 'blog-1',
